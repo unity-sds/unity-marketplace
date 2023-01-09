@@ -5,9 +5,12 @@
     "Owner": "Tom Barber",
     "Description": "A demonstration application for the Unity platform",
     "Repository": "https://github.com/unity-sds/unity-marketplace",
-    "Tags": ["tag a", "tag b"],
+    "Tags": [
+        "tag a",
+        "tag b"
+    ],
     "Category": "data processing",
-    "IamRoles": [
+    "IamRoles": {
         "Statement": [
             {
                 "Effect": "Allow",
@@ -19,27 +22,31 @@
                 ]
             }
         ]
-    ],
+    },
     "Package": "http://github.com/path/to/package.zip",
     "ManagedDependencies": [
-        "Eks":[
-            "MinimumVersion": "1.21"
-        ]
+        {
+            "Eks": {
+                "MinimumVersion": "1.21"
+            }
+        }
     ],
     "Backend": "terraform",
-    "DefaultDeployment": [
-        "Variables":[
+    "DefaultDeployment": {
+        "Variables": {
             "some_terraform_variable": "some_value"
-        ],
-        "EksSpec":[
+        },
+        "EksSpec": {
             "NodeGroups": [
-                "NodeGroup1": [
-                    "MinNodes": 1,
-                    "MaxNodes": 10,
-                    "DesiredNodes": 4
-                    "InstanceType": "m6.large"
-                ]
+                {
+                    "NodeGroup1": {
+                        "MinNodes": 1,
+                        "MaxNodes": 10,
+                        "DesiredNodes": 4,
+                        "InstanceType": "m6.large"
+                    }
+                }
             ]
-        ]
-    ]
+        }
+    }
 }
