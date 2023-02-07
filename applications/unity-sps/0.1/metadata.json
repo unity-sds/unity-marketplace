@@ -1,0 +1,52 @@
+{
+  "Name": "Unity SPS",
+  "Version": "0.1-beta",
+  "Channel": "beta",
+  "Owner": "Tom Barber",
+  "Description": "The Unity SPS Prototype package",
+  "Repository": "https://github.com/unity-sds/unity-sps-prototype",
+  "Tags": [
+    "sps",
+    "data processing"
+  ],
+  "Category": "data processing",
+  "IamRoles": {
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "iam:CreateInstanceProfile"
+        ],
+        "Resource": [
+          "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+        ]
+      }
+    ]
+  },
+  "Package": "https://github.com/unity-sds/unity-sps-prototype/archive/refs/tags/u-cs-deployment.zip",
+  "ManagedDependencies": [
+    {
+      "Eks": {
+        "MinimumVersion": "1.21"
+      }
+    }
+  ],
+  "Backend": "terraform",
+  "DefaultDeployment": {
+    "Variables": {
+      "some_terraform_variable": "some_value"
+    },
+    "EksSpec": {
+      "NodeGroups": [
+        {
+          "NodeGroup1": {
+            "MinNodes": 1,
+            "MaxNodes": 10,
+            "DesiredNodes": 4,
+            "InstanceType": "m6.large"
+          }
+        }
+      ]
+    }
+  }
+}
