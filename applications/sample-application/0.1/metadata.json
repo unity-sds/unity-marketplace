@@ -1,52 +1,52 @@
 {
-    "Name": "sample application",
-    "Version": "0.1-beta",
-    "Channel": "beta",
-    "Owner": "Tom Barber",
-    "Description": "A demonstration application for the Unity platform",
-    "Repository": "https://github.com/unity-sds/unity-marketplace",
-    "Tags": [
-        "tag a",
-        "tag b"
-    ],
-    "Category": "data processing",
-    "IamRoles": {
-        "Statement": [
-            {
-                "Effect": "Allow",
-                "Action": [
-                    "iam:CreateInstanceProfile"
-                ],
-                "Resource": [
-                    "arn:aws:iam::<account_id>:instance-profile/eksctl*"
-                ]
-            }
+  "Name": "sample application",
+  "Version": "0.1-beta",
+  "Channel": "beta",
+  "Owner": "Tom Barber",
+  "Description": "A demonstration application for the Unity platform",
+  "Repository": "https://github.com/unity-sds/unity-marketplace",
+  "Tags": [
+    "tag a",
+    "tag b"
+  ],
+  "Category": "data processing",
+  "IamRoles": {
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "iam:CreateInstanceProfile"
+        ],
+        "Resource": [
+          "arn:aws:iam::<account_id>:instance-profile/eksctl*"
         ]
-    },
-    "Package": "http://github.com/path/to/package.zip",
-    "ManagedDependencies": [
-        {
-            "Eks": {
-                "MinimumVersion": "1.21"
-            }
-        }
-    ],
-    "Backend": "terraform",
-    "DefaultDeployment": {
-        "Variables": {
-            "some_terraform_variable": "some_value"
-        },
-        "EksSpec": {
-            "NodeGroups": [
-                {
-                    "NodeGroup1": {
-                        "MinNodes": 1,
-                        "MaxNodes": 10,
-                        "DesiredNodes": 4,
-                        "InstanceType": "m6.large"
-                    }
-                }
-            ]
-        }
+      }
+    ]
+  },
+  "Package": "http://github.com/path/to/package.zip",
+  "ManagedDependencies": [
+    {
+      "Eks": {
+        "MinimumVersion": "1.21"
+      }
     }
+  ],
+  "Backend": "terraform",
+  "DefaultDeployment": {
+    "Variables": {
+      "some_terraform_variable": "some_value"
+    },
+    "EksSpec": {
+      "NodeGroups": [
+        {
+          "NodeGroup1": {
+            "MinNodes": 1,
+            "MaxNodes": 10,
+            "DesiredNodes": 4,
+            "InstanceType": "m6.large"
+          }
+        }
+      ]
+    }
+  }
 }
