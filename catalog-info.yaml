@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Unity Common Services Marketplace
+  description: |
+    The Unity Common Services Marketplace is a proof of concept marketplace for housing links to applications ready for deployment into the Unity platform.
+  links:
+    - title: Github
+      url: https://github.com/unity-sds
+    - title: Documentation
+      url: https://unity-sds.gitbook.io/docs/developer-docs/common-services
+  annotations:
+    github.com/project-slug: unity-sds/unity-marketplace
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  owner: guests
+  lifecycle: experimental
