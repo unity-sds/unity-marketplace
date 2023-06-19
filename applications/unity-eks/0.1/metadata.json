@@ -1,0 +1,45 @@
+{
+  "Name": "Unity Kubernetes",
+  "Version": "0.1-beta",
+  "Channel": "beta",
+  "Owner": "Tom Barber",
+  "Description": "The Unity Kubernetes package",
+  "Repository": "https://github.com/unity-sds/unity-cs-infra",
+  "Tags": [
+    "eks",
+    "kubernetes"
+  ],
+  "Category": "system",
+  "IamRoles": {
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "iam:CreateInstanceProfile"
+        ],
+        "Resource": [
+          "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+        ]
+      }
+    ]
+  },
+  "Package": "https://github.com/unity-sds/unity-cs-infra",
+  "Backend": "./github/workflows/deploy_eks.yml",
+  "DefaultDeployment": {
+    "Variables": {
+      "some_terraform_variable": "some_value"
+    },
+    "EksSpec": {
+      "NodeGroups": [
+        {
+          "NodeGroup1": {
+            "MinNodes": 1,
+            "MaxNodes": 10,
+            "DesiredNodes": 4,
+            "InstanceType": "m6.large"
+          }
+        }
+      ]
+    }
+  }
+}
