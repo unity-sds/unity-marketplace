@@ -26,6 +26,13 @@
   "Package": "https://github.com/unity-sds/unity-cs-infra",
   "Entrypoint": "./github/workflows/deploy_eks.yml",
   "Backend": "action",
+  "ManagedDependencies": [
+    {
+      "Eks": {
+        "MinimumVersion": "1.21"
+      }
+    }
+  ],
   "DefaultDeployment": {
     "Variables": {
       "some_terraform_variable": "some_value"
