@@ -1,5 +1,6 @@
 {
-  "Name": "Unity Kubernetes",
+  "DisplayName": "Unity Kubernetes",
+  "Name": "unity-eks",
   "Version": "0.1-beta",
   "Channel": "beta",
   "Owner": "Tom Barber",
