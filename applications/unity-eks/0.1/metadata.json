@@ -25,7 +25,7 @@
     ]
   },
   "Package": "https://github.com/unity-sds/unity-cs-infra",
-  "Entrypoint": "./github/workflows/deploy_eks.yml",
+  "Entrypoint": ".github/workflows/deploy_eks.yml",
   "Backend": "action",
   "ManagedDependencies": [
     {
