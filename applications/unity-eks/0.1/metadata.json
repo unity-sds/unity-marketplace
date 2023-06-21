@@ -24,7 +24,8 @@
     ]
   },
   "Package": "https://github.com/unity-sds/unity-cs-infra",
-  "Backend": "./github/workflows/deploy_eks.yml",
+  "Entrypoint": "./github/workflows/deploy_eks.yml",
+  "Backend": "action",
   "DefaultDeployment": {
     "Variables": {
       "some_terraform_variable": "some_value"
