@@ -4,7 +4,7 @@
   "Channel": "beta",
   "Owner": "U-CS Team",
   "Description": "A package to install and configure an API gateway for your Unity Venue",
-  "Repository": "https://github.com/unity-sds/unity-cs-infra/tree/main/terraform-project-api-gateway_module",
+  "Repository": "https://github.com/unity-sds/unity-cs-infra/",
   "Tags": [
     "api",
     "http",
@@ -26,6 +26,7 @@
   },
   "Package": "https://github.com/unity-sds/unity-cs-infra/tree/main/terraform-project-api-gateway_module",
   "Backend": "terraform",
+  "WorkDirectory": "terraform-project-api-gateway_module"
   "DefaultDeployment": {
     "Variables": {
       "some_terraform_variable": "some_value"
