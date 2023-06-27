@@ -1,5 +1,6 @@
 {
-  "Name": "Unity API Gateway",
+  "DisplayName": "Unity API Gateway",
+  "Name": "unity-apigateway",
   "Version": "0.1-beta",
   "Channel": "beta",
   "Owner": "U-CS Team",
