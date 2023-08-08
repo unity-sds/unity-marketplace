@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const jsonfile = require('jsonfile');
 
-const directoryPath = 'unity-marketplace/applications';
+const directoryPath = 'applications';
 let manifest = [];
 
 const walkDirectory = (dir, callback) => {
