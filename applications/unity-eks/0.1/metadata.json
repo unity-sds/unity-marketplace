@@ -25,8 +25,8 @@
     ]
   },
   "Package": "https://github.com/unity-sds/unity-cs-infra",
-  "Entrypoint": "/deploy_eks.yml",
-  "Backend": "action",
+  "WorkDirectory": "terraform-unity-eks_module",
+  "Backend": "terraform",
   "ManagedDependencies": [
     {
       "Eks": {
