@@ -123,6 +123,7 @@
         }
       }
     ],
+    "PostInstall": "scripts/postinstall.sh",
     "DefaultDeployment": {
       "Variables": {
         "Values": {
