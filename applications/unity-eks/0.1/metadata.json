@@ -36,13 +36,13 @@
   ],
   "DefaultDeployment": {
     "Variables": {
-      "some_terraform_variable": "some_value"
+      "some_terraform_variable": "some_value",
       "NodeGroups": [
           {
-            "Name": "String"
-            "MinNodes": "Number"
-            "MaxNodes": "Number"
-            "DesiredNodes": "Number"
+            "Name": "String",
+            "MinNodes": "Number",
+            "MaxNodes": "Number",
+            "DesiredNodes": "Number",
             "InstanceType": "String"
           }
       ]
