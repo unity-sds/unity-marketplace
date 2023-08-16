@@ -1,65 +1,60 @@
 {
-  "DisplayName": "Unity Kubernetes",
-  "Name": "unity-eks",
-  "Version": "0.1",
-  "Channel": "beta",
-  "Owner": "Tom Barber",
-  "Description": "The Unity Kubernetes package",
-  "Repository": "https://github.com/unity-sds/unity-cs-infra",
-  "Tags": [
-    "eks",
-    "kubernetes"
-  ],
-  "Category": "system",
-  "IamRoles": {
-    "Statement": [
-      {
-        "Effect": "Allow",
-        "Action": [
-          "iam:CreateInstanceProfile"
-        ],
-        "Resource": [
-          "arn:aws:iam::<account_id>:instance-profile/eksctl*"
-        ]
-      }
-    ]
-  },
-  "Package": "https://github.com/unity-sds/unity-cs-infra",
-  "WorkDirectory": "terraform-unity-eks_module",
-  "Backend": "terraform",
-  "ManagedDependencies": [
-    {
-      "Eks": {
-        "MinimumVersion": "1.21"
-      }
-    }
-  ],
-  "DefaultDeployment": {
-    "Variables": {
-      "some_terraform_variable": "some_value",
-      "NodeGroups": [
-          {
-            "Name": {
-              "type":"String",
-              "default": "NodeGroup"
-            },
-            "MinNodes": {
-              "type": "Number",
-              "default": "1"
-            },
-            "MaxNodes": {
-              "type": "Number",
-              "default": "3"
-            },
-            "DesiredNodes": {
-              "type": "Number",
-              "default": "1"
-            },
-            "InstanceType": {
-              "type": "String",
-              "default": "m6.xlarge"
-          }
-      ]
-    }
-  }
+	"DisplayName": "Unity Kubernetes",
+	"Name": "unity-eks",
+	"Version": "0.1",
+	"Channel": "beta",
+	"Owner": "Tom Barber",
+	"Description": "The Unity Kubernetes package",
+	"Repository": "https://github.com/unity-sds/unity-cs-infra",
+	"Tags": [
+		"eks",
+		"kubernetes"
+	],
+	"Category": "system",
+	"IamRoles": {
+		"Statement": [{
+			"Effect": "Allow",
+			"Action": [
+				"iam:CreateInstanceProfile"
+			],
+			"Resource": [
+				"arn:aws:iam::<account_id>:instance-profile/eksctl*"
+			]
+		}]
+	},
+	"Package": "https://github.com/unity-sds/unity-cs-infra",
+	"WorkDirectory": "terraform-unity-eks_module",
+	"Backend": "terraform",
+	"ManagedDependencies": [{
+		"Eks": {
+			"MinimumVersion": "1.21"
+		}
+	}],
+	"DefaultDeployment": {
+		"Variables": {
+			"some_terraform_variable": "some_value",
+			"NodeGroups": [{
+				"Name": {
+					"type": "String",
+					"default": "NodeGroup"
+				},
+				"MinNodes": {
+					"type": "Number",
+					"default": "1"
+				},
+				"MaxNodes": {
+					"type": "Number",
+					"default": "3"
+				},
+				"DesiredNodes": {
+					"type": "Number",
+					"default": "1"
+				},
+				"InstanceType": {
+					"type": "String",
+					"default": "m6.xlarge"
+				}
+			}]
+		}
+	}
 }
