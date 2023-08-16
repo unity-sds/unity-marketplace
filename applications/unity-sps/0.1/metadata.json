@@ -31,150 +31,17 @@
 	"DefaultDeployment": {
 		"Variables": {
 			"Values": {
-				"celeryconfig_filename": "celeryconfig_remote.py",
-				"counter": "",
-				"datasets_filename": "datasets.remote.template.json",
-				"deployment_environment": "mcp",
+				"release": "23.1",
+				"deployment_name": "",
+				"eks_cluster_name": "",
 				"kubeconfig_filepath": "",
-				"namespace": "",
-				"service_type": "LoadBalancer",
-				"venue": ""
+				"venue": "",
+				"uads_development_efs_fsmt_id": "",
+				"default_group_node_group_name": "LoadBalancer",
+				"default_group_node_group_launch_template_name": "",
+				"elb_subnets": ""
 			},
 			"NestedValues": {
-				"docker_images": {
-					"Config": {
-						"ades_wpst_api": {
-							"Options": {
-								"type": "String",
-								"default": "ghcr.io/unity-sds/unity-sps-prototype/ades-wpst-api:unity-v0.0.1"
-							}
-						},
-						"busybox": {
-							"Options": {
-								"type": "String",
-								"default": "k8s.gcr.io/busybox"
-							}
-						},
-						"hysds_core": {
-							"Options": {
-								"type": "String",
-								"default": "ghcr.io/unity-sds/unity-sps-prototype/hysds-core:unity-v0.0.1"
-							}
-						},
-						"hysds_factotum": {
-							"Options": {
-								"type": "String",
-								"default": "ghcr.io/unity-sds/unity-sps-prototype/hysds-factotum:unity-v0.0.1"
-							}
-						},
-						"hysds_grq2": {
-							"Options": {
-								"type": "String",
-								"default": "ghcr.io/unity-sds/unity-sps-prototype/hysds-grq2:unity-v0.0.1"
-							}
-						},
-						"hysds_mozart": {
-							"Options": {
-								"type": "String",
-								"default": "ghcr.io/unity-sds/unity-sps-prototype/hysds-mozart:unity-v0.0.1"
-							}
-						},
-						"hysds_ui": {
-							"Options": {
-								"type": "String",
-								"default": "ghcr.io/unity-sds/unity-sps-prototype/hysds-ui-remote:unity-v0.0.1"
-							}
-						},
-						"hysds_verdi": {
-							"Options": {
-								"type": "String",
-								"default": "ghcr.io/unity-sds/unity-sps-prototype/hysds-verdi:unity-v0.0.1"
-							}
-						},
-						"logstash": {
-							"Options": {
-								"type": "String",
-								"default": "docker.elastic.co/logstash/logstash:7.10.2"
-							}
-						},
-						"mc": {
-							"Options": {
-								"type": "String",
-								"default": "minio/mc:RELEASE.2022-03-13T22-34-00Z"
-							}
-						},
-						"minio": {
-							"Options": {
-								"type": "String",
-								"default": "minio/minio:RELEASE.2022-03-17T06-34-49Z"
-							}
-						},
-						"rabbitmq": {
-							"Options": {
-								"type": "String",
-								"default": "rabbitmq:3-management"
-							}
-						},
-						"redis": {
-							"Options": {
-								"type": "String",
-								"default": "redis:latest"
-							}
-						}
-					}
-				},
-				"node_port_map": {
-					"Config": {
-						"ades_wpst_api_service": {
-							"Options": {
-								"default": "30011",
-								"type": "Number"
-							}
-						},
-						"grq2_es": {
-							"Options": {
-								"default": "30012",
-								"type": "Number"
-							}
-						},
-						"grq2_service": {
-							"Options": {
-								"default": "30002",
-								"type": "Number"
-							}
-						},
-						"hysds_ui_service": {
-							"Options": {
-								"default": "30009",
-								"type": "Number"
-							}
-						},
-						"minio_service_api": {
-							"Options": {
-								"default": "30007",
-								"type": "Number"
-							}
-						},
-						"minio_service_interface": {
-							"Options": {
-								"default": "30008",
-								"type": "Number"
-							}
-						},
-						"mozart_es": {
-							"Options": {
-								"default": "30013",
-								"type": "Number"
-							}
-						},
-						"mozart_service": {
-							"Options": {
-								"default": "30001",
-								"type": "Number"
-							}
-						}
-					}
-				}
 			}
 		}
 	}
