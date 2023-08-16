@@ -41,7 +41,7 @@
           {
             "Name": {
               "type":"String",
-              "default: "NodeGroup"
+              "default": "NodeGroup"
             },
             "MinNodes": {
               "type": "Number",
