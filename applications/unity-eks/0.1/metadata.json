@@ -42,19 +42,19 @@
             "Name": {
               "type":"String",
               "default: "NodeGroup"
-            }
+            },
             "MinNodes": {
               "type": "Number",
               "default": "1"
-            }
+            },
             "MaxNodes": {
               "type": "Number",
               "default": "3"
-            }
+            },
             "DesiredNodes": {
               "type": "Number",
               "default": "1"
-            }
+            },
             "InstanceType": {
               "type": "String",
               "default": "m6.xlarge"
