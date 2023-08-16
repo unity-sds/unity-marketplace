@@ -30,6 +30,7 @@
 				"MinimumVersion": "1.21"
 			}
 		}],
+		"PostInstall": "scripts/postinstall.sh",
 		"DefaultDeployment": {
 			"Variables": {
 				"Values": {
