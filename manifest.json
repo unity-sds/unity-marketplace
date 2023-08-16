@@ -125,17 +125,14 @@
     ],
     "DefaultDeployment": {
       "Variables": {
-        "some_terraform_variable": "some_value"
-      },
-      "EksSpec": {
+        "some_terraform_variable": "some_value",
         "NodeGroups": [
           {
-            "NodeGroup1": {
-              "MinNodes": 1,
-              "MaxNodes": 10,
-              "DesiredNodes": 4,
-              "InstanceType": "m6.large"
-            }
+            "Name": "String",
+            "MinNodes": "Number",
+            "MaxNodes": "Number",
+            "DesiredNodes": "Number",
+            "InstanceType": "String"
           }
         ]
       }
