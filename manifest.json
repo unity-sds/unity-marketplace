@@ -128,11 +128,26 @@
         "some_terraform_variable": "some_value",
         "NodeGroups": [
           {
-            "Name": "String",
-            "MinNodes": "Number",
-            "MaxNodes": "Number",
-            "DesiredNodes": "Number",
-            "InstanceType": "String"
+            "Name": {
+              "type": "String",
+              "default": "NodeGroup"
+            },
+            "MinNodes": {
+              "type": "Number",
+              "default": "1"
+            },
+            "MaxNodes": {
+              "type": "Number",
+              "default": "3"
+            },
+            "DesiredNodes": {
+              "type": "Number",
+              "default": "1"
+            },
+            "InstanceType": {
+              "type": "String",
+              "default": "m6.xlarge"
+            }
           }
         ]
       }
