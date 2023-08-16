@@ -87,72 +87,228 @@
       }
     }
   },
-  {
-    "DisplayName": "Unity Kubernetes",
-    "Name": "unity-eks",
-    "Version": "0.1",
-    "Channel": "beta",
-    "Owner": "Tom Barber",
-    "Description": "The Unity Kubernetes package",
-    "Repository": "https://github.com/unity-sds/unity-cs-infra",
-    "Tags": [
-      "eks",
-      "kubernetes"
-    ],
-    "Category": "system",
-    "IamRoles": {
-      "Statement": [
-        {
-          "Effect": "Allow",
-          "Action": [
-            "iam:CreateInstanceProfile"
-          ],
-          "Resource": [
-            "arn:aws:iam::<account_id>:instance-profile/eksctl*"
-          ]
-        }
-      ]
-    },
-    "Package": "https://github.com/unity-sds/unity-cs-infra",
-    "WorkDirectory": "terraform-unity-eks_module",
-    "Backend": "terraform",
-    "ManagedDependencies": [
-      {
-        "Eks": {
-          "MinimumVersion": "1.21"
-        }
-      }
-    ],
-    "DefaultDeployment": {
-      "Variables": {
-        "some_terraform_variable": "some_value",
-        "NodeGroups": [
+  [
+    {
+      "Name": "sample application",
+      "Version": "0.1-beta",
+      "Channel": "beta",
+      "Owner": "Tom Barber",
+      "Description": "A demonstration application for the Unity platform",
+      "Repository": "https://github.com/unity-sds/unity-marketplace",
+      "Tags": [
+        "tag a",
+        "tag b"
+      ],
+      "Category": "data processing",
+      "IamRoles": {
+        "Statement": [
           {
-            "Name": {
-              "type": "String",
-              "default": "NodeGroup"
-            },
-            "MinNodes": {
-              "type": "Number",
-              "default": "1"
-            },
-            "MaxNodes": {
-              "type": "Number",
-              "default": "3"
-            },
-            "DesiredNodes": {
-              "type": "Number",
-              "default": "1"
-            },
-            "InstanceType": {
-              "type": "String",
-              "default": "m6.xlarge"
-            }
+            "Effect": "Allow",
+            "Action": [
+              "iam:CreateInstanceProfile"
+            ],
+            "Resource": [
+              "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+            ]
           }
         ]
+      },
+      "Package": "http://github.com/path/to/package.zip",
+      "ManagedDependencies": [
+        {
+          "Eks": {
+            "MinimumVersion": "1.21"
+          }
+        }
+      ],
+      "Backend": "terraform",
+      "DefaultDeployment": {
+        "Variables": {
+          "some_terraform_variable": "some_value"
+        },
+        "EksSpec": {
+          "NodeGroups": [
+            {
+              "NodeGroup1": {
+                "MinNodes": 1,
+                "MaxNodes": 10,
+                "DesiredNodes": 4,
+                "InstanceType": "m6.large"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "DisplayName": "Unity API Gateway",
+      "Name": "unity-apigateway",
+      "Version": "0.1-beta",
+      "Channel": "beta",
+      "Owner": "U-CS Team",
+      "Description": "A package to install and configure an API gateway for your Unity Venue",
+      "Repository": "https://github.com/unity-sds/unity-cs-infra/",
+      "Tags": [
+        "api",
+        "http",
+        "rest"
+      ],
+      "Category": "system",
+      "IamRoles": {
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "iam:CreateInstanceProfile"
+            ],
+            "Resource": [
+              "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+            ]
+          }
+        ]
+      },
+      "Package": "https://github.com/unity-sds/unity-cs-infra/",
+      "Backend": "terraform",
+      "WorkDirectory": "terraform-project-api-gateway_module",
+      "DefaultDeployment": {
+        "Variables": {
+          "some_terraform_variable": "some_value"
+        }
+      }
+    },
+    {
+      "DisplayName": "Unity Kubernetes",
+      "Name": "unity-eks",
+      "Version": "0.1",
+      "Channel": "beta",
+      "Owner": "Tom Barber",
+      "Description": "The Unity Kubernetes package",
+      "Repository": "https://github.com/unity-sds/unity-cs-infra",
+      "Tags": [
+        "eks",
+        "kubernetes"
+      ],
+      "Category": "system",
+      "IamRoles": {
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "iam:CreateInstanceProfile"
+            ],
+            "Resource": [
+              "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+            ]
+          }
+        ]
+      },
+      "Package": "https://github.com/unity-sds/unity-cs-infra",
+      "WorkDirectory": "terraform-unity-eks_module",
+      "Backend": "terraform",
+      "ManagedDependencies": [
+        {
+          "Eks": {
+            "MinimumVersion": "1.21"
+          }
+        }
+      ],
+      "DefaultDeployment": {
+        "Variables": {
+          "Values": {
+            "some_terraform_variable": "some_value"
+          },
+          "NestedValues": {
+            "NodeGroups": {
+              "Config": {
+                "Name": {
+                  "Options": {
+                    "type": "String",
+                    "default": "NodeGroup"
+                  }
+                },
+                "MinNodes": {
+                  "Options": {
+                    "type": "Number",
+                    "default": "1"
+                  }
+                },
+                "MaxNodes": {
+                  "Options": {
+                    "type": "Number",
+                    "default": "3"
+                  }
+                },
+                "DesiredNodes": {
+                  "Options": {
+                    "type": "Number",
+                    "default": "1"
+                  }
+                },
+                "InstanceType": {
+                  "Options": {
+                    "type": "String",
+                    "default": "m6.xlarge"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "Name": "Unity SPS",
+      "Version": "0.1-beta",
+      "Channel": "beta",
+      "Owner": "Tom Barber",
+      "Description": "The Unity SPS Prototype package",
+      "Repository": "https://github.com/unity-sds/unity-sps-prototype",
+      "Tags": [
+        "sps",
+        "data processing"
+      ],
+      "Category": "data processing",
+      "IamRoles": {
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "iam:CreateInstanceProfile"
+            ],
+            "Resource": [
+              "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+            ]
+          }
+        ]
+      },
+      "Package": "https://github.com/unity-sds/unity-sps-prototype/archive/refs/tags/u-cs-deployment.zip",
+      "ManagedDependencies": [
+        {
+          "Eks": {
+            "MinimumVersion": "1.21"
+          }
+        }
+      ],
+      "Backend": "terraform",
+      "DefaultDeployment": {
+        "Variables": {
+          "some_terraform_variable": "some_value"
+        },
+        "EksSpec": {
+          "NodeGroups": [
+            {
+              "NodeGroup1": {
+                "MinNodes": 1,
+                "MaxNodes": 10,
+                "DesiredNodes": 4,
+                "InstanceType": "m6.large"
+              }
+            }
+          ]
+        }
       }
     }
-  },
+  ],
   {
     "Name": "Unity SPS",
     "Version": "0.1-beta",
