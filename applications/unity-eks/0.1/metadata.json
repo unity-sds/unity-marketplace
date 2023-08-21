@@ -36,42 +36,6 @@
 				"Values": {
 					"cluster_version": "1.27"
 				},
-				"NestedValues": {
-					"NodeGroups": {
-						"Config": {
-							"Name": {
-								"Options": {
-									"type": "String",
-									"default": "NodeGroup"
-								}
-							},
-							"MinNodes": {
-								"Options": {
-									"type": "Number",
-									"default": "1"
-								}
-							},
-							"MaxNodes": {
-								"Options": {
-									"type": "Number",
-									"default": "3"
-								}
-							},
-							"DesiredNodes": {
-								"Options": {
-									"type": "Number",
-									"default": "1"
-								}
-							},
-							"InstanceType": {
-								"Options": {
-									"type": "String",
-									"default": "m6.xlarge"
-								}
-							}
-						}
-					}
-				},
 				"AdvancedValues": {
 					"nodegroups": {
 						"blue": {
