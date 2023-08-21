@@ -143,8 +143,7 @@
               ],
               "capacity_type": "SPOT",
               "enable_bootstrap_user_data": true
-            },
-            "green": {}
+            }
           }
         }
       }
