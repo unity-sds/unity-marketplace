@@ -42,8 +42,6 @@
 				"default_group_node_group_name": "LoadBalancer",
 				"default_group_node_group_launch_template_name": "",
 				"elb_subnets": ""
-			},
-			"NestedValues": {
 			}
 		}
 	}
