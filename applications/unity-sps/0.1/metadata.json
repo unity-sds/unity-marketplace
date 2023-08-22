@@ -1,5 +1,6 @@
 {
-	"Name": "Unity SPS",
+	"Name": "unity-sps",
+	"DisplayName": "Unity SPS",
 	"Version": "0.1-beta",
 	"Channel": "beta",
 	"Owner": "Tom Barber",
