@@ -23,7 +23,7 @@
 	},
 	"Package": "https://github.com/unity-sds/unity-sps-prototype/archive/refs/tags/u-cs-deployment.zip",
 	"ManagedDependencies": [{
-		"Eks": {
+		"unity-eks": {
 			"MinimumVersion": "1.21"
 		}
 	}],
