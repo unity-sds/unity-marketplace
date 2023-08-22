@@ -171,6 +171,7 @@
       ]
     },
     "Package": "https://github.com/unity-sds/unity-sps-prototype/archive/refs/tags/u-cs-deployment.zip",
+    "PreInstall": "scripts/preinstall.sh",
     "ManagedDependencies": [
       {
         "unity-eks": {
