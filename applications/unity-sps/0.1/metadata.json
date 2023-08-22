@@ -21,7 +21,7 @@
 			]
 		}]
 	},
-	"Package": "https://github.com/buggtb/unity-sps-prototype@71c9d8359db73fd0ccd74ed20587b7c76338fe5e",
+	"Package": "https://github.com/buggtb/unity-sps-prototype@bebb4f5cc092b88fb583c4f36cecefdb7f037244",
 	"PreInstall": "scripts/preinstall.sh",
 	"ManagedDependencies": [{
 		"unity-eks": {
