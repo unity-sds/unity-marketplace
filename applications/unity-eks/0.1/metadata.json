@@ -25,11 +25,7 @@
 		"Package": "https://github.com/unity-sds/unity-cs-infra",
 		"WorkDirectory": "terraform-unity-eks_module",
 		"Backend": "terraform",
-		"ManagedDependencies": [{
-			"Eks": {
-				"MinimumVersion": "1.21"
-			}
-		}],
+		"ManagedDependencies": {},
 		"PostInstall": "scripts/postinstall.sh",
 		"DefaultDeployment": {
 			"Variables": {
