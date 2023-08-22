@@ -148,7 +148,7 @@
   {
     "Name": "unity-sps",
     "DisplayName": "Unity SPS",
-    "Version": "0.1-beta",
+    "Version": "0.1",
     "Channel": "beta",
     "Owner": "Tom Barber",
     "Description": "The Unity SPS Prototype package",
