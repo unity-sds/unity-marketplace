@@ -38,16 +38,12 @@
 				},
 				"AdvancedValues": {
 					"nodegroups": {
-						"blue": {
-							"create_iam_role":            false,
-							"iam_role_arn":               "data.aws_ssm_parameter.eks_iam_node_role.value",
+						"UnityNodeGroup": {
 							"min_size":                   1,
 							"max_size":                   10,
 							"desired_size":               1,
-							"ami_id":                     "ami-0c0e3c5bfa15ba56b",
 							"instance_types":             ["t3.large"],
-							"capacity_type":              "SPOT",
-							"enable_bootstrap_user_data": true
+							"capacity_type":              "SPOT"
 						}
 					}
 
