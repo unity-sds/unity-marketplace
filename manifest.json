@@ -170,7 +170,7 @@
         }
       ]
     },
-    "Package": "https://github.com/unity-sds/unity-sps-prototype/archive/refs/tags/u-cs-deployment.zip",
+    "Package": "https://github.com/buggtb/unity-sps-prototype@71c9d8359db73fd0ccd74ed20587b7c76338fe5e",
     "PreInstall": "scripts/preinstall.sh",
     "ManagedDependencies": [
       {
