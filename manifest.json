@@ -170,7 +170,7 @@
     "PreInstall": "scripts/preinstall.sh",
     "ManagedDependencies": {
       "unity-eks": {
-        "MinimumVersion": "1.21"
+        "MinimumVersion": "0.1"
       }
     },
     "Backend": "terraform",
