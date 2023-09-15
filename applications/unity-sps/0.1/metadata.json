@@ -28,7 +28,11 @@
 	"ManagedDependencies": {
 		"unity-eks": {
 			"MinimumVersion": "0.1"
+		},
+		"efs":{
+
 		}
+
 	},
 	"Backend": "terraform",
 	"DefaultDeployment": {
