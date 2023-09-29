@@ -179,14 +179,11 @@
       "Variables": {
         "Values": {
           "release": "23.1",
-          "deployment_name": "",
-          "eks_cluster_name": "",
+          "eks_cluster_name": "*unity-eks",
           "kubeconfig_filepath": "",
-          "venue": "",
           "uads_development_efs_fsmt_id": "",
-          "default_group_node_group_name": "LoadBalancer",
-          "default_group_node_group_launch_template_name": "",
-          "elb_subnets": ""
+          "default_group_node_group_name": "UnityNodeGroup",
+          "default_group_node_group_launch_template_name": ""
         }
       }
     }
