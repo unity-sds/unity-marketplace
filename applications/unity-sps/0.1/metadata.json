@@ -22,7 +22,7 @@
 			]
 		}]
 	},
-	"Package": "https://github.com/buggtb/unity-sps-prototype@23ec40d2bce83e8bc911dc04ab595e05eb7109c8",
+	"Package": "https://github.com/buggtb/unity-sps-prototype@cbef3b1c84a0cc48dac0a025f1f3ce544c79f8ae",
 	"WorkDirectory": "terraform-unity",
 	"PreInstall": "scripts/preinstall.sh",
 	"ManagedDependencies": {
