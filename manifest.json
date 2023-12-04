@@ -177,7 +177,7 @@
     "Backend": "terraform",
     "ManagedDependencies": {},
     "DefaultDeployment": {},
-    "WorkDirectory": "terraform"
+    "WorkDirectory": "terraform-unity"
   },
   {
     "Name": "unity-sps",
