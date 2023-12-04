@@ -15,5 +15,6 @@
 		"Package": "https://github.com/unity-sds/unity-proxy",
 		"Backend": "terraform",
 		"ManagedDependencies": {},
-		"DefaultDeployment": {}
+		"DefaultDeployment": {},
+	        "WorkDirectory": "terraform"
 	}
