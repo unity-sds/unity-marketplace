@@ -81,11 +81,7 @@
     "Package": "https://github.com/unity-sds/unity-cs-infra/",
     "Backend": "terraform",
     "WorkDirectory": "terraform-project-api-gateway_module",
-    "DefaultDeployment": {
-      "Variables": {
-        "some_terraform_variable": "some_value"
-      }
-    }
+    "DefaultDeployment": {}
   },
   {
     "DisplayName": "Unity Cloud Environment",
