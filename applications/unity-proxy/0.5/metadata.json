@@ -1,7 +1,7 @@
 {
 		"DisplayName": "Unity Proxy",
 		"Name": "unity-proxy",
-		"Version": "0.4",
+		"Version": "0.5",
 		"Channel": "beta",
 		"Owner": "Tom Barber",
 		"Description": "The Unity HTTPD Proxy package",
@@ -12,7 +12,7 @@
 		],
 		"Category": "system",
 		"IamRoles": {},
-		"Package": "https://github.com/unity-sds/unity-proxy@b9bacf57350be01bc25cf31bf3f8df270d00f57c",
+		"Package": "https://github.com/unity-sds/unity-proxy",
 		"Backend": "terraform",
 		"ManagedDependencies": {},
 		"DefaultDeployment": {},
