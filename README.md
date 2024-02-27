@@ -2,6 +2,8 @@
 
 A prototype marketplace that might one day drive Unity installations via the control plane.
 
+For an example project that can be referenced by the JSON schema, please see [this reference application](https://github.com/unity-sds/unity-reference-application).
+
 ## Schema
 ```json
 {
