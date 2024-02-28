@@ -1,7 +1,7 @@
 {
   "DisplayName": "Unity API Gateway",
   "Name": "unity-apigateway",
-  "Version": "0.3",
+  "Version": "0.4",
   "Channel": "beta",
   "Owner": "U-CS Team",
   "Description": "A package to install and configure an API gateway for your Unity Venue",
@@ -25,7 +25,7 @@
       }
     ]
   },
-  "Package": "https://github.com/unity-sds/unity-cs-infra@c19fc734701f8eaeeb59fd25598f09dc70ab64cf",
+  "Package": "https://github.com/unity-sds/unity-cs-infra",
   "Backend": "terraform",
   "WorkDirectory": "terraform-project-api-gateway_module",
   "DefaultDeployment": {}
