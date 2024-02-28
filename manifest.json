@@ -142,6 +142,38 @@
         }
       ]
     },
+    "Package": "https://github.com/unity-sds/unity-cs-infra@c19fc734701f8eaeeb59fd25598f09dc70ab64cf",
+    "Backend": "terraform",
+    "WorkDirectory": "terraform-project-api-gateway_module",
+    "DefaultDeployment": {}
+  },
+  {
+    "DisplayName": "Unity API Gateway",
+    "Name": "unity-apigateway",
+    "Version": "0.4",
+    "Channel": "beta",
+    "Owner": "U-CS Team",
+    "Description": "A package to install and configure an API gateway for your Unity Venue",
+    "Repository": "https://github.com/unity-sds/unity-cs-infra/",
+    "Tags": [
+      "api",
+      "http",
+      "rest"
+    ],
+    "Category": "system",
+    "IamRoles": {
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": [
+            "iam:CreateInstanceProfile"
+          ],
+          "Resource": [
+            "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+          ]
+        }
+      ]
+    },
     "Package": "https://github.com/unity-sds/unity-cs-infra",
     "Backend": "terraform",
     "WorkDirectory": "terraform-project-api-gateway_module",
@@ -234,6 +266,26 @@
     "Category": "system",
     "IamRoles": {},
     "Package": "https://github.com/unity-sds/unity-proxy@2e2b9614da610d4a0c4579b66c7bfddd6caa1f71",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.10",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy",
     "Backend": "terraform",
     "ManagedDependencies": {},
     "DefaultDeployment": {},
@@ -393,7 +445,7 @@
     ],
     "Category": "system",
     "IamRoles": {},
-    "Package": "https://github.com/unity-sds/unity-proxy",
+    "Package": "https://github.com/unity-sds/unity-proxy@2c1cf77359dfea37532bc96b3085245f2a57e1d6",
     "Backend": "terraform",
     "ManagedDependencies": {},
     "DefaultDeployment": {},
