@@ -12,7 +12,7 @@
    ],
    "Category": "ui",
    "IamRoles": {},
-   "Package": "https://github.com/unity-sds/unity-ui-infra.git",
+   "Package": "https://github.com/unity-sds/unity-ui-infra.git#initial-marketplace-integration",
    "ManagedDependencies": {},
    "Backend": "terraform",
    "WorkDirectory": "terraform-unity-ui",
