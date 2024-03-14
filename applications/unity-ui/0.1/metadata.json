@@ -1,0 +1,36 @@
+{
+   "DisplayName": "Unity UI Application",
+   "Name": "unity-ui",
+   "Version": "0.0.1-beta",
+   "Channel": "beta",
+   "Owner": "UI/UX Team",
+   "Description": "A package to install and configure the Unity UI Application for your Unity Venue",
+   "Repository": "https://github.com/unity-sds/unity-ui-infra",
+   "Tags": [
+     "ui",
+     "navigation"
+   ],
+   "Category": "ui",
+   "IamRoles": {},
+   "Package": "https://github.com/unity-sds/unity-ui-infra.git#initial-marketplace-integration",
+   "ManagedDependencies": {},
+   "Backend": "terraform",
+   "WorkDirectory": "terraform-unity-ui",
+   "DefaultDeployment": {
+    "Variables": {
+      "some_terraform_variable": "some_value"
+    },
+    "EksSpec": {
+      "NodeGroups": [
+        {
+          "NodeGroup1": {
+            "MinNodes": 1,
+            "MaxNodes": 3,
+            "DesiredNodes": 2,
+            "InstanceType": "m4.large"
+          }
+        }
+      ]
+    }
+  }
+ }
