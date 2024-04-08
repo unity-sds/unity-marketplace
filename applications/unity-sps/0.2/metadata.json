@@ -22,10 +22,12 @@
 			]
 		}]
 	},
-	"Package": "https://github.com/unity-sds/unity-sps@60cb758c9a4222c50a3d08b15df255ba23dfc7db",
+	"Package": "https://github.com/unity-sds/unity-sps@df99d6ecbbf18f126b9ce503fba0a803f4189bb8",
 	"WorkDirectory": "terraform-unity",
-	"PreInstall": "scripts/preinstall.sh",
 	"ManagedDependencies": {
+		"unity-sps-eks": {
+			"MinimumVersion": "0.1"
+		},
 		"efs":{
 
 		}
@@ -34,25 +36,13 @@
 	"DefaultDeployment": {
 		"Variables": {
 			"Values": {
-				"release": "23.1",
+				"release": "24.1",
 				"cluster_version": "1.27",
 				"eks_cluster_name": "*unity-eks",
 				"kubeconfig_filepath": "",
 				"uads_development_efs_fsmt_id": "",
 				"default_group_node_group_name": "UnityNodeGroup",
 				"default_group_node_group_launch_template_name": ""
-			},
-			"AdvancedValues": {
-				"nodegroups": {
-					"UnityNodeGroup": {
-						"min_size":                   1,
-						"max_size":                   10,
-						"desired_size":               1,
-						"instance_types":             ["t3.large"],
-						"capacity_type":              "SPOT"
-					}
-				}
-
 			}
 		}
 	}

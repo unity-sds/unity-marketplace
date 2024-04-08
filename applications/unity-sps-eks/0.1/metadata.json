@@ -1,0 +1,50 @@
+{
+	"DisplayName": "Unity SPS Kubernetes",
+	"Name": "unity-sps-eks",
+	"Version": "0.1",
+	"Channel": "beta",
+	"Owner": "Bradley Lunsford",
+	"Description": "The Unity SPS Kubernetes package",
+	"Repository": "https://github.com/unity-sds/unity-cs-infra",
+	"Tags": [
+		"eks",
+		"sps",
+		"kubernetes"
+	],
+	"Category": "system",
+	"IamRoles": {
+		"Statement": [{
+			"Effect": "Allow",
+			"Action": [
+				"iam:CreateInstanceProfile"
+			],
+			"Resource": [
+				"arn:aws:iam::<account_id>:instance-profile/eksctl*"
+			]
+		}]
+	},
+	"Package": "https://github.com/unity-sds/unity-sps",
+	"WorkDirectory": "terraform-unity/modules/terraform-eks-cluster",
+	"Backend": "terraform",
+	"ManagedDependencies": {},
+	"PostInstall": "../../scripts/postinstall.sh",
+	"DefaultDeployment": {
+		"Variables": {
+			"Values": {
+				"cluster_version": "1.27"
+			},
+			"AdvancedValues": {
+				"nodegroups": {
+					"UnityNodeGroup": {
+						"min_size":                   1,
+						"max_size":                   10,
+						"desired_size":               1,
+						"instance_types":             ["t3.large"],
+						"capacity_type":              "SPOT"
+					}
+				}
+
+			}
+		}
+	}
+}
