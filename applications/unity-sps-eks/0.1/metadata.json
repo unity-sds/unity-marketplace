@@ -23,7 +23,7 @@
 			]
 		}]
 	},
-	"Package": "https://github.com/unity-sds/unity-sps@5a2d507e88e133607c6f4ad7804c923aef72b9d9",
+	"Package": "https://github.com/unity-sds/unity-sps@0c5bed076de0bfa95ef8cb31d46ae6506dd2dcf0",
 	"WorkDirectory": "terraform-unity/modules/terraform-eks-cluster",
 	"Backend": "terraform",
 	"ManagedDependencies": {},
