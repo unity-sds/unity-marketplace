@@ -1,7 +1,7 @@
 {
 		"DisplayName": "Unity Proxy",
 		"Name": "unity-proxy",
-		"Version": "0.13",
+		"Version": "0.14",
 		"Channel": "beta",
 		"Owner": "Tom Barber",
 		"Description": "The Unity HTTPD Proxy package",
