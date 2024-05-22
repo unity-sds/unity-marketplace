@@ -54,13 +54,8 @@
       }
     ]
   },
-  "Package": "https://github.com/unity-sds/unity-reference-application.git",
+  "WorkDirectory": "sds/mmgis-unity-marketplace/terraform-unity", 
   "ManagedDependencies": [
-    {
-      "Eks": {
-        "MinimumVersion": "1.21"
-      }
-    }
   ],
   "Backend": "terraform",
   "DefaultDeployment": {}
