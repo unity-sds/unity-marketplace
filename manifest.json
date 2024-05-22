@@ -1,5 +1,70 @@
 [
   {
+    "Name": "mmgis",
+    "Version": "2.11.0",
+    "Channel": "beta",
+    "Owner": "Tariq Soliman",
+    "Description": "Multi-Mission Geographical Information System - Web-based Mapping and Spatial Data Infrastructure for Planetary Science Operations",
+    "Repository": "https://github.com/NASA-AMMOS/MMGIS",
+    "Tags": [
+      "tile",
+      "javascript",
+      "planet",
+      "earth",
+      "mars",
+      "space",
+      "graphics",
+      "globe3d",
+      "tile3d",
+      "tiles",
+      "geojson",
+      "orbit",
+      "orbital",
+      "vector",
+      "dem",
+      "dtm",
+      "elevation",
+      "gdal",
+      "gdal2tiles",
+      "3d",
+      "nasa",
+      "ammos",
+      "map",
+      "mapping",
+      "visualization",
+      "three",
+      "threejs",
+      "webgl",
+      "gis",
+      "geographical information system",
+      "geospatial",
+      "rendering",
+      "geometry",
+      "terrain",
+      "mmgis",
+      "leaflet",
+      "multi-mission"
+    ],
+    "Category": "geospatial",
+    "IamRoles": {
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": [
+            "iam:CreateInstanceProfile"
+          ],
+          "Resource": [
+            "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+          ]
+        }
+      ]
+    },
+    "WorkDirectory": "sds/unity/terraform",
+    "ManagedDependencies": [],
+    "Backend": "terraform",
+    "DefaultDeployment": {}
+  },
+  {
     "Name": "unity-reference-application",
     "Version": "0.1-beta",
     "Channel": "beta",
