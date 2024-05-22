@@ -54,7 +54,7 @@
       }
     ]
   },
-  "WorkDirectory": "sds/mmgis-unity-marketplace/terraform-unity", 
+  "WorkDirectory": "sds/unity/terraform", 
   "ManagedDependencies": [
   ],
   "Backend": "terraform",
