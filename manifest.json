@@ -374,11 +374,17 @@
     ],
     "Category": "system",
     "IamRoles": {},
-    "Package": "https://github.com/unity-sds/unity-proxy@59ec1f65c4227a56c9996714e2292887f99254df",
+    "Package": "https://github.com/unity-sds/unity-proxy@d85bc77cdd01106f2bac21c5fbe535274acbbc8b",
     "Backend": "terraform",
     "ManagedDependencies": {},
-    "DefaultDeployment": {},
-    "WorkDirectory": "terraform-unity"
+    "WorkDirectory": "terraform-unity",
+    "DefaultDeployment": {
+      "Variables": {
+        "Values": {
+          "httpd_proxy_version": "dc16bff"
+        }
+      }
+    }
   },
   {
     "DisplayName": "Unity Proxy",
