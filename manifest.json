@@ -249,6 +249,29 @@
     "DefaultDeployment": {}
   },
   {
+    "DisplayName": "Unity DS Application",
+    "Name": "unity-ds",
+    "Version": "7.7.0",
+    "Channel": "beta",
+    "Owner": "DS Team",
+    "Description": "A package to create S3 buckets in arbitrary Unity Venue",
+    "Repository": "https://github.com/unity-sds/unity-data-services",
+    "Tags": [
+      "ds"
+    ],
+    "Category": "ds",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-data-services/releases/download/v7.7.0-merge-9294125742/terraform_marketplace-7.7.0-merge-9294125742.zip",
+    "ManagedDependencies": {},
+    "Backend": "terraform",
+    "WorkDirectory": "/",
+    "DefaultDeployment": {
+      "Variables": {
+        "some_terraform_variable": "See variables.tf in package (zip)"
+      }
+    }
+  },
+  {
     "DisplayName": "Unity Kubernetes",
     "Name": "unity-eks",
     "Version": "0.1",
