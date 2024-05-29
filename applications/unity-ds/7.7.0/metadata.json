@@ -11,7 +11,7 @@
    ],
    "Category": "ds",
    "IamRoles": {},
-   "Package": "https://github.com/unity-sds/unity-data-services/releases/download/v7.7.0-merge-9163562780/terraform_marketplace-7.7.0-merge-9163562780.zip",
+   "Package": "https://github.com/unity-sds/unity-data-services/releases/download/v7.7.0-merge-9294125742/terraform_marketplace-7.7.0-merge-9294125742.zip",
    "ManagedDependencies": {},
    "Backend": "terraform",
    "WorkDirectory": "/",
