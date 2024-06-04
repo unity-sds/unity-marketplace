@@ -249,6 +249,26 @@
     "DefaultDeployment": {}
   },
   {
+    "DisplayName": "Unity Health Status Monitoring",
+    "Name": "unity-cs-monitoring-lambda",
+    "Version": "0.1",
+    "Channel": "beta",
+    "Owner": "Brandon Hargitay",
+    "Description": "Monitor the health of various Unity resources",
+    "Repository": "https://github.com/unity-sds/unity-cs-monitoring-lambda",
+    "Tags": [
+      "monitor",
+      "health"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-cs-monitoring-lambda",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
     "DisplayName": "Unity DS Application",
     "Name": "unity-ds",
     "Version": "7.7.0",
@@ -437,16 +457,10 @@
     ],
     "Category": "system",
     "IamRoles": {},
-    "Package": "https://github.com/unity-sds/unity-proxy@287af36ac4dc540c5aab46c38026f174d8b68a47",
+    "Package": "https://github.com/unity-sds/unity-proxy",
     "Backend": "terraform",
     "ManagedDependencies": {},
-    "DefaultDeployment": {
-      "Variables": {
-        "Values": {
-          "httpd_proxy_version": "dc16bff"
-        }
-      }
-    },
+    "DefaultDeployment": {},
     "WorkDirectory": "terraform-unity"
   },
   {
