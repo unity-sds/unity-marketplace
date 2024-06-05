@@ -284,7 +284,6 @@
     "Package": "https://github.com/unity-sds/unity-data-services/releases/download/v7.7.0-merge-9373961021/terraform_marketplace-7.7.0-merge-9373961021.zip",
     "ManagedDependencies": {},
     "Backend": "terraform",
-    "WorkDirectory": "/",
     "DefaultDeployment": {
       "Variables": {
         "Values": {
