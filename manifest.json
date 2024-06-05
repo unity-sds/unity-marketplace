@@ -281,13 +281,25 @@
     ],
     "Category": "ds",
     "IamRoles": {},
-    "Package": "https://github.com/unity-sds/unity-data-services/releases/download/v7.7.0-merge-9294125742/terraform_marketplace-7.7.0-merge-9294125742.zip",
+    "Package": "https://github.com/unity-sds/unity-data-services/releases/download/v7.7.0-merge-9373961021/terraform_marketplace-7.7.0-merge-9373961021.zip",
     "ManagedDependencies": {},
     "Backend": "terraform",
     "WorkDirectory": "/",
     "DefaultDeployment": {
       "Variables": {
-        "some_terraform_variable": "See variables.tf in package (zip)"
+        "Values": {
+          "project": "",
+          "venue": "",
+          "market_bucket_name": "",
+          "market_bucket__notification_prefix": "stage_out",
+          "uds_aws_account_ssm_path": "/unity/shared-services/aws/account",
+          "uds_aws_account_region_ssm_path": "/unity/shared-services/aws/account/region",
+          "uds_prefix_ssm_path": "/unity/shared-services/data-catalog/deployment/prefix",
+          "tags": {
+            "Component": "DS",
+            "Version": "7.7.0"
+          }
+        }
       }
     }
   },
