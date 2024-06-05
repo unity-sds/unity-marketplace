@@ -275,7 +275,6 @@
     "Channel": "beta",
     "Owner": "DS Team",
     "Description": "A package to create S3 buckets in arbitrary Unity Venue",
-    "Repository": "https://github.com/unity-sds/unity-data-services",
     "Tags": [
       "ds"
     ],
