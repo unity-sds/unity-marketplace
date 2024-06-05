@@ -4,6 +4,7 @@
    "Version": "7.7.0",
    "Channel": "beta",
    "Owner": "DS Team",
+   "Repository": "https://github.com/unity-sds/unity-data-services",
    "Description": "A package to create S3 buckets in arbitrary Unity Venue",
    "Tags": [
      "ds"
@@ -13,6 +14,7 @@
    "Package": "https://github.com/unity-sds/unity-data-services/releases/download/v7.7.0-merge-9373961021/terraform_marketplace-7.7.0-merge-9373961021.zip",
    "ManagedDependencies": {},
    "Backend": "terraform",
+   "WorkDirectory": "/",
    "DefaultDeployment": {
     "Variables": {
         "Values": {
