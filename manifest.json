@@ -632,38 +632,6 @@
     "WorkDirectory": "terraform-unity"
   },
   {
-    "DisplayName": "Unity API Gateway",
-    "Name": "unity-apigateway",
-    "Version": "0.1",
-    "Channel": "beta",
-    "Owner": "U-CS Team",
-    "Description": "A package to install and configure a Shared Services API gateway for your Unity Venue",
-    "Repository": "https://github.com/unity-sds/unity-cs-infra/",
-    "Tags": [
-      "api",
-      "http",
-      "rest"
-    ],
-    "Category": "system",
-    "IamRoles": {
-      "Statement": [
-        {
-          "Effect": "Allow",
-          "Action": [
-            "iam:CreateInstanceProfile"
-          ],
-          "Resource": [
-            "arn:aws:iam::<account_id>:instance-profile/eksctl*"
-          ]
-        }
-      ]
-    },
-    "Package": "https://github.com/unity-sds/unity-cs-infra",
-    "Backend": "terraform",
-    "WorkDirectory": "terraform-shared-services-api-gateway-updater_module",
-    "DefaultDeployment": {}
-  },
-  {
     "Name": "unity-sps",
     "DisplayName": "Unity SPS",
     "Version": "0.1",
