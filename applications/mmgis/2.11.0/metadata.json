@@ -55,7 +55,7 @@
     ]
   },
   "WorkDirectory": "sds/unity/terraform", 
-  "ManagedDependencies": [],
+  "ManagedDependencies": {},
   "Backend": "terraform",
   "DefaultDeployment": {}
 }
