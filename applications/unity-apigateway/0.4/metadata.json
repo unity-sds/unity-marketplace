@@ -6,26 +6,18 @@
   "Owner": "U-CS Team",
   "Description": "A package to install and configure an API gateway for your Unity Venue",
   "Repository": "https://github.com/unity-sds/unity-cs-infra/",
-  "Tags": [
-    "api",
-    "http",
-    "rest"
-  ],
+  "Tags": ["api", "http", "rest"],
   "Category": "system",
   "IamRoles": {
     "Statement": [
       {
         "Effect": "Allow",
-        "Action": [
-          "iam:CreateInstanceProfile"
-        ],
-        "Resource": [
-          "arn:aws:iam::<account_id>:instance-profile/eksctl*"
-        ]
+        "Action": ["iam:CreateInstanceProfile"],
+        "Resource": ["arn:aws:iam::<account_id>:instance-profile/eksctl*"]
       }
     ]
   },
-  "Package": "https://github.com/unity-sds/unity-cs-infra",
+  "Package": "https://github.com/unity-sds/unity-cs-infra@216a67890041d788da180ae54ef9ca8b36ea0983",
   "Backend": "terraform",
   "WorkDirectory": "terraform-project-api-gateway_module",
   "DefaultDeployment": {}
