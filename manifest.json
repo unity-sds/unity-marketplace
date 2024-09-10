@@ -269,7 +269,7 @@
     "WorkDirectory": "terraform-unity"
   },
   {
-    "DisplayName": "Unity DS Application",
+    "DisplayName": "Unity-DS-Application",
     "Name": "unity-ds",
     "Version": "7.7.0",
     "Channel": "beta",
