@@ -1,6 +1,71 @@
 [
   {
-    "Name": "sample application",
+    "Name": "mmgis2",
+    "Version": "2.11.0",
+    "Channel": "beta",
+    "Owner": "Tariq Soliman",
+    "Description": "Multi-Mission Geographical Information System - Web-based Mapping and Spatial Data Infrastructure for Planetary Science Operations",
+    "Repository": "https://github.com/NASA-AMMOS/MMGIS",
+    "Tags": [
+      "tile",
+      "javascript",
+      "planet",
+      "earth",
+      "mars",
+      "space",
+      "graphics",
+      "globe3d",
+      "tile3d",
+      "tiles",
+      "geojson",
+      "orbit",
+      "orbital",
+      "vector",
+      "dem",
+      "dtm",
+      "elevation",
+      "gdal",
+      "gdal2tiles",
+      "3d",
+      "nasa",
+      "ammos",
+      "map",
+      "mapping",
+      "visualization",
+      "three",
+      "threejs",
+      "webgl",
+      "gis",
+      "geographical information system",
+      "geospatial",
+      "rendering",
+      "geometry",
+      "terrain",
+      "mmgis",
+      "leaflet",
+      "multi-mission"
+    ],
+    "Category": "geospatial",
+    "IamRoles": {
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": [
+            "iam:CreateInstanceProfile"
+          ],
+          "Resource": [
+            "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+          ]
+        }
+      ]
+    },
+    "WorkDirectory": "sds/unity/terraform",
+    "ManagedDependencies": {},
+    "Backend": "terraform",
+    "DefaultDeployment": {}
+  },
+  {
+    "Name": "unity-reference-application",
     "Version": "0.1-beta",
     "Channel": "beta",
     "Owner": "Tom Barber",
@@ -24,7 +89,7 @@
         }
       ]
     },
-    "Package": "http://github.com/path/to/package.zip",
+    "Package": "https://github.com/unity-sds/unity-reference-application.git",
     "ManagedDependencies": [
       {
         "Eks": {
@@ -33,23 +98,7 @@
       }
     ],
     "Backend": "terraform",
-    "DefaultDeployment": {
-      "Variables": {
-        "some_terraform_variable": "some_value"
-      },
-      "EksSpec": {
-        "NodeGroups": [
-          {
-            "NodeGroup1": {
-              "MinNodes": 1,
-              "MaxNodes": 10,
-              "DesiredNodes": 4,
-              "InstanceType": "m6.large"
-            }
-          }
-        ]
-      }
-    }
+    "DefaultDeployment": {}
   },
   {
     "DisplayName": "Unity API Gateway",
@@ -86,7 +135,71 @@
   {
     "DisplayName": "Unity API Gateway",
     "Name": "unity-apigateway",
-    "Version": "0.1-beta",
+    "Version": "0.2",
+    "Channel": "beta",
+    "Owner": "U-CS Team",
+    "Description": "A package to install and configure an API gateway for your Unity Venue",
+    "Repository": "https://github.com/unity-sds/unity-cs-infra/",
+    "Tags": [
+      "api",
+      "http",
+      "rest"
+    ],
+    "Category": "system",
+    "IamRoles": {
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": [
+            "iam:CreateInstanceProfile"
+          ],
+          "Resource": [
+            "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+          ]
+        }
+      ]
+    },
+    "Package": "https://github.com/unity-sds/unity-cs-infra@11d69388097633975e622b6362b0b37ffd8ccf48",
+    "Backend": "terraform",
+    "WorkDirectory": "terraform-project-api-gateway_module",
+    "DefaultDeployment": {}
+  },
+  {
+    "DisplayName": "Unity API Gateway",
+    "Name": "unity-apigateway",
+    "Version": "0.3",
+    "Channel": "beta",
+    "Owner": "U-CS Team",
+    "Description": "A package to install and configure an API gateway for your Unity Venue",
+    "Repository": "https://github.com/unity-sds/unity-cs-infra/",
+    "Tags": [
+      "api",
+      "http",
+      "rest"
+    ],
+    "Category": "system",
+    "IamRoles": {
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": [
+            "iam:CreateInstanceProfile"
+          ],
+          "Resource": [
+            "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+          ]
+        }
+      ]
+    },
+    "Package": "https://github.com/unity-sds/unity-cs-infra@68ee42bd3136c6cf8a6be80bc0f2c811d4b1c831",
+    "Backend": "terraform",
+    "WorkDirectory": "terraform-project-api-gateway_module",
+    "DefaultDeployment": {}
+  },
+  {
+    "DisplayName": "Unity API Gateway",
+    "Name": "unity-apigateway",
+    "Version": "0.4",
     "Channel": "beta",
     "Owner": "U-CS Team",
     "Description": "A package to install and configure an API gateway for your Unity Venue",
@@ -134,6 +247,57 @@
     "ManagedDependencies": {},
     "WorkDirectory": "unity-cloud-env",
     "DefaultDeployment": {}
+  },
+  {
+    "DisplayName": "Unity Health Status Monitoring",
+    "Name": "unity-cs-monitoring-lambda",
+    "Version": "0.1",
+    "Channel": "beta",
+    "Owner": "Brandon Hargitay",
+    "Description": "Monitor the health of various Unity resources",
+    "Repository": "https://github.com/unity-sds/unity-cs-monitoring-lambda",
+    "Tags": [
+      "monitor",
+      "health"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-cs-monitoring-lambda",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity-DS-Application",
+    "Name": "unity-ds",
+    "Version": "7.7.0",
+    "Channel": "beta",
+    "Owner": "DS Team",
+    "Repository": "https://github.com/unity-sds/unity-data-services",
+    "Description": "A package to create S3 buckets in arbitrary Unity Venue",
+    "Tags": [
+      "ds"
+    ],
+    "Category": "ds",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-data-services@a282e3ea72143f16d08644ea8ca21c3038366750",
+    "ManagedDependencies": {},
+    "Backend": "terraform",
+    "WorkDirectory": "tf-module/marketplace",
+    "DefaultDeployment": {
+      "Variables": {
+        "Values": {
+          "project": "",
+          "venue": "",
+          "market_bucket_name": "",
+          "market_bucket__notification_prefix": "stage_out",
+          "uds_aws_account_ssm_path": "/unity/shared-services/aws/account",
+          "uds_aws_account_region_ssm_path": "/unity/shared-services/aws/account/region",
+          "uds_prefix_ssm_path": "/unity/shared-services/data-catalog/deployment/prefix"
+        }
+      }
+    }
   },
   {
     "DisplayName": "Unity Kubernetes",
@@ -210,7 +374,87 @@
   {
     "DisplayName": "Unity Proxy",
     "Name": "unity-proxy",
-    "Version": "0.2",
+    "Version": "0.10",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@8850b1b2b14d347aae30d72fc65bb9ecd8c80074",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.11",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@1a2226adedb23392614fc4c96a5075645a08e79b",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.12",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@b3015c752ba0cf3f867c3328cd4043fa336eca62",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.13.0",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@e5638b35a1b22976f00bca1fd063719c282b5b01",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.14",
     "Channel": "beta",
     "Owner": "Tom Barber",
     "Description": "The Unity HTTPD Proxy package",
@@ -222,6 +466,166 @@
     "Category": "system",
     "IamRoles": {},
     "Package": "https://github.com/unity-sds/unity-proxy",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.2",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@5ee80fcb17471ddb892f1596150adfdb4e89cb44",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.3",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@e81e23573426054dabe1cddb57990cc90a4bdc8f",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.4",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@b9bacf57350be01bc25cf31bf3f8df270d00f57c",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.5",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@affe8a77601dbceea8923aae8825704a2d80ea39",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.6",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@06496c16803a3676d21dac4597bf7d8378c549e5",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.7",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@34f85f3629c365be3c2c6772bd87cd44af5f16bf",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.8",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@83ec53a5310752c9ddd4255da156a88c36180e51",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.9",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@2c1cf77359dfea37532bc96b3085245f2a57e1d6",
     "Backend": "terraform",
     "ManagedDependencies": {},
     "DefaultDeployment": {},
@@ -273,6 +677,144 @@
           "default_group_node_group_name": "UnityNodeGroup",
           "default_group_node_group_launch_template_name": ""
         }
+      }
+    }
+  },
+  {
+    "Name": "unity-sps",
+    "DisplayName": "Unity SPS",
+    "Version": "0.2",
+    "Channel": "beta",
+    "Owner": "Bradley Lunsford",
+    "Description": "The Unity SPS package",
+    "Repository": "https://github.com/unity-sds/unity-sps",
+    "Tags": [
+      "sps",
+      "data processing"
+    ],
+    "Category": "data processing",
+    "IamRoles": {
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": [
+            "iam:CreateInstanceProfile"
+          ],
+          "Resource": [
+            "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+          ]
+        }
+      ]
+    },
+    "Package": "https://github.com/unity-sds/unity-sps@df99d6ecbbf18f126b9ce503fba0a803f4189bb8",
+    "WorkDirectory": "terraform-unity",
+    "ManagedDependencies": {
+      "unity-sps-eks": {
+        "MinimumVersion": "0.1"
+      },
+      "efs": {}
+    },
+    "Backend": "terraform",
+    "DefaultDeployment": {
+      "Variables": {
+        "Values": {
+          "release": "24.1",
+          "cluster_version": "1.27",
+          "eks_cluster_name": "*unity-eks",
+          "kubeconfig_filepath": "",
+          "uads_development_efs_fsmt_id": "",
+          "default_group_node_group_name": "UnityNodeGroup",
+          "default_group_node_group_launch_template_name": ""
+        }
+      }
+    }
+  },
+  {
+    "DisplayName": "Unity SPS Kubernetes",
+    "Name": "unity-sps-eks",
+    "Version": "0.1",
+    "Channel": "beta",
+    "Owner": "Bradley Lunsford",
+    "Description": "The Unity SPS Kubernetes package",
+    "Repository": "https://github.com/unity-sds/unity-cs-infra",
+    "Tags": [
+      "eks",
+      "sps",
+      "kubernetes"
+    ],
+    "Category": "system",
+    "IamRoles": {
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": [
+            "iam:CreateInstanceProfile"
+          ],
+          "Resource": [
+            "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+          ]
+        }
+      ]
+    },
+    "Package": "https://github.com/unity-sds/unity-sps@8500c852b101715b373924dc1ede17957c638678",
+    "WorkDirectory": "terraform-unity/modules/terraform-eks-cluster",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "PostInstall": "../../scripts/postinstall.sh",
+    "DefaultDeployment": {
+      "Variables": {
+        "Values": {
+          "counter": "000a"
+        },
+        "AdvancedValues": {
+          "nodegroups": {
+            "UnityNodeGroup": {
+              "min_size": 1,
+              "max_size": 10,
+              "desired_size": 1,
+              "instance_types": [
+                "t3.large"
+              ],
+              "capacity_type": "SPOT"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "DisplayName": "Unity UI Application",
+    "Name": "unity-ui",
+    "Version": "0.0.1-beta",
+    "Channel": "beta",
+    "Owner": "UI/UX Team",
+    "Description": "A package to install and configure the Unity UI Application for your Unity Venue",
+    "Repository": "https://github.com/unity-sds/unity-ui-infra",
+    "Tags": [
+      "ui",
+      "navigation"
+    ],
+    "Category": "ui",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-ui-infra.git#initial-marketplace-integration",
+    "ManagedDependencies": {},
+    "Backend": "terraform",
+    "WorkDirectory": "terraform-unity-ui",
+    "DefaultDeployment": {
+      "Variables": {
+        "some_terraform_variable": "some_value"
+      },
+      "EksSpec": {
+        "NodeGroups": [
+          {
+            "NodeGroup1": {
+              "MinNodes": 1,
+              "MaxNodes": 3,
+              "DesiredNodes": 2,
+              "InstanceType": "m4.large"
+            }
+          }
+        ]
       }
     }
   }

@@ -1,0 +1,49 @@
+{
+	"Name": "unity-sps",
+	"DisplayName": "Unity SPS",
+	"Version": "0.2",
+	"Channel": "beta",
+	"Owner": "Bradley Lunsford",
+	"Description": "The Unity SPS package",
+	"Repository": "https://github.com/unity-sds/unity-sps",
+	"Tags": [
+		"sps",
+		"data processing"
+	],
+	"Category": "data processing",
+	"IamRoles": {
+		"Statement": [{
+			"Effect": "Allow",
+			"Action": [
+				"iam:CreateInstanceProfile"
+			],
+			"Resource": [
+				"arn:aws:iam::<account_id>:instance-profile/eksctl*"
+			]
+		}]
+	},
+	"Package": "https://github.com/unity-sds/unity-sps@df99d6ecbbf18f126b9ce503fba0a803f4189bb8",
+	"WorkDirectory": "terraform-unity",
+	"ManagedDependencies": {
+		"unity-sps-eks": {
+			"MinimumVersion": "0.1"
+		},
+		"efs":{
+
+		}
+	},
+	"Backend": "terraform",
+	"DefaultDeployment": {
+		"Variables": {
+			"Values": {
+				"release": "24.1",
+				"cluster_version": "1.27",
+				"eks_cluster_name": "*unity-eks",
+				"kubeconfig_filepath": "",
+				"uads_development_efs_fsmt_id": "",
+				"default_group_node_group_name": "UnityNodeGroup",
+				"default_group_node_group_launch_template_name": ""
+			}
+		}
+	}
+}

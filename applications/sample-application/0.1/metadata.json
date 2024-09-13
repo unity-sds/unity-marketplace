@@ -1,5 +1,5 @@
 {
-  "Name": "sample application",
+  "Name": "unity-reference-application",
   "Version": "0.1-beta",
   "Channel": "beta",
   "Owner": "Tom Barber",
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "Package": "http://github.com/path/to/package.zip",
+  "Package": "https://github.com/unity-sds/unity-reference-application.git",
   "ManagedDependencies": [
     {
       "Eks": {
@@ -32,21 +32,5 @@
     }
   ],
   "Backend": "terraform",
-  "DefaultDeployment": {
-    "Variables": {
-      "some_terraform_variable": "some_value"
-    },
-    "EksSpec": {
-      "NodeGroups": [
-        {
-          "NodeGroup1": {
-            "MinNodes": 1,
-            "MaxNodes": 10,
-            "DesiredNodes": 4,
-            "InstanceType": "m6.large"
-          }
-        }
-      ]
-    }
-  }
+  "DefaultDeployment": {}
 }
