@@ -1,6 +1,6 @@
 # unity-marketplace
 
-A prototype marketplace that might one day drive Unity installations via the control plane.
+A marketplace of deployable components, that will drive Unity installations via the Unity Management Console.
 
 For an example project that can be referenced by the JSON schema, please see [this reference application](https://github.com/unity-sds/unity-reference-application).
 
