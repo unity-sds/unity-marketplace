@@ -17,8 +17,10 @@
    "Backend": "terraform",
    "WorkDirectory": "terraform-unity-ui",
    "DefaultDeployment": {
-    "Variables": {
-      "app_count": 2
-    }
-  }
- }
+      "Variables": {
+         "Values": {
+            "app_count": "2"
+         }
+      }
+   }
+}
