@@ -7,8 +7,8 @@
    "Description": "A package to install and configure the Unity UI Application for your Unity Venue",
    "Repository": "https://github.com/unity-sds/unity-ui-infra",
    "Tags": [
-     "ui",
-     "navigation"
+      "ui",
+      "navigation"
    ],
    "Category": "ui",
    "IamRoles": {},
