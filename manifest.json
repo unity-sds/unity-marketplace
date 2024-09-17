@@ -785,7 +785,7 @@
   {
     "DisplayName": "Unity UI Application",
     "Name": "unity-ui",
-    "Version": "0.0.2-beta",
+    "Version": "0.1",
     "Channel": "beta",
     "Owner": "UI/UX Team",
     "Description": "A package to install and configure the Unity UI Application for your Unity Venue",
@@ -802,7 +802,9 @@
     "WorkDirectory": "terraform-unity-ui",
     "DefaultDeployment": {
       "Variables": {
-        "app_count": 2
+        "Values": {
+          "app_count": "2"
+        }
       }
     }
   }
