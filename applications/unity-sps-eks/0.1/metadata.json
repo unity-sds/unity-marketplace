@@ -23,16 +23,12 @@
 			]
 		}]
 	},
-	"Package": "https://github.com/unity-sds/unity-sps@8500c852b101715b373924dc1ede17957c638678",
-	"WorkDirectory": "terraform-unity/modules/terraform-eks-cluster",
+	"Package": "https://github.com/unity-sds/unity-sps@290669f00845e65302fdd409214c980f961fe588",
+	"WorkDirectory": "terraform-unity/modules/terraform-unity-sps-eks",
 	"Backend": "terraform",
 	"ManagedDependencies": {},
-	"PostInstall": "../../scripts/postinstall.sh",
 	"DefaultDeployment": {
 		"Variables": {
-			"Values": {
-				"counter": "000a"
-			},
 			"AdvancedValues": {
 				"nodegroups": {
 					"UnityNodeGroup": {
