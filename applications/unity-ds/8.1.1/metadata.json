@@ -11,7 +11,7 @@
    ],
    "Category": "ds",
    "IamRoles": {},
-   "Package": "https://github.com/unity-sds/unity-data-services@a282e3ea72143f16d08644ea8ca21c3038366750",
+   "Package": "https://github.com/unity-sds/unity-data-services@fd87b63d97b3e689cec98bca8444678de95f77a7",
    "ManagedDependencies": {},
    "Backend": "terraform",
    "WorkDirectory": "tf-module/marketplace",
