@@ -29,7 +29,7 @@
 	"ManagedDependencies": {},
 	"DefaultDeployment": {
 		"Variables": {
-			"AdvancedValues": {
+			"Values": {
 				"nodegroups": {
 					"UnityNodeGroup": {
 						"min_size":                   1,
