@@ -300,6 +300,35 @@
     }
   },
   {
+    "DisplayName": "Unity-DS-Application",
+    "Name": "unity-ds",
+    "Version": "8.1.1",
+    "Channel": "beta",
+    "Owner": "DS Team",
+    "Repository": "https://github.com/unity-sds/unity-data-services",
+    "Description": "A package to create S3 buckets in arbitrary Unity Venue",
+    "Tags": [
+      "ds"
+    ],
+    "Category": "ds",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-data-services@fd87b63d97b3e689cec98bca8444678de95f77a7",
+    "ManagedDependencies": {},
+    "Backend": "terraform",
+    "WorkDirectory": "tf-module/marketplace",
+    "DefaultDeployment": {
+      "Variables": {
+        "Values": {
+          "market_bucket_name": "",
+          "market_bucket__notification_prefix": "stage_out",
+          "uds_aws_account_ssm_path": "/unity/shared-services/aws/account",
+          "uds_aws_account_region_ssm_path": "/unity/shared-services/aws/account/region",
+          "uds_prefix_ssm_path": "/unity/shared-services/data-catalog/deployment/prefix"
+        }
+      }
+    }
+  },
+  {
     "DisplayName": "Unity Kubernetes",
     "Name": "unity-eks",
     "Version": "0.1",
