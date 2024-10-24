@@ -741,6 +741,9 @@
       "unity-sps-eks": {
         "MinimumVersion": "0.1"
       },
+      "unity-sps-karpenter": {
+        "MinimumVersion": "0.1"
+      },
       "efs": {}
     },
     "Backend": "terraform",
@@ -785,7 +788,7 @@
         }
       ]
     },
-    "Package": "https://github.com/unity-sds/unity-sps@5ddbcc2204b66ea38af1ce335a66e4c519d05d2e",
+    "Package": "https://github.com/unity-sds/unity-sps@a2400b766c99a1cb61897681bd5c6821e528a7bb",
     "WorkDirectory": "terraform-unity/modules/terraform-unity-sps-eks",
     "Backend": "terraform",
     "ManagedDependencies": {},
@@ -805,6 +808,46 @@
           }
         }
       }
+    }
+  },
+  {
+    "DisplayName": "Unity SPS Karpenter",
+    "Name": "unity-sps-karpenter",
+    "Version": "0.1",
+    "Channel": "beta",
+    "Owner": "Bradley Lunsford",
+    "Description": "The Unity SPS EKS Karpenter package",
+    "Repository": "https://github.com/unity-sds/unity-sps",
+    "Tags": [
+      "eks",
+      "sps",
+      "karpenter",
+      "kubernetes"
+    ],
+    "Category": "system",
+    "IamRoles": {
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": [
+            "iam:CreateInstanceProfile"
+          ],
+          "Resource": [
+            "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+          ]
+        }
+      ]
+    },
+    "Package": "https://github.com/unity-sds/unity-sps@a2400b766c99a1cb61897681bd5c6821e528a7bb",
+    "WorkDirectory": "terraform-unity/modules/terraform-unity-sps-karpenter",
+    "Backend": "terraform",
+    "ManagedDependencies": {
+      "unity-sps-eks": {
+        "MinimumVersion": "0.1"
+      }
+    },
+    "DefaultDeployment": {
+      "Variables": {}
     }
   },
   {
