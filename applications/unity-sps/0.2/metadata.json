@@ -28,6 +28,9 @@
 		"unity-sps-eks": {
 			"MinimumVersion": "0.1"
 		},
+		"unity-sps-karpenter": {
+			"MinimumVersion": "0.1"
+		},
 		"efs":{
 
 		}
