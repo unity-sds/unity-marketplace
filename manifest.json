@@ -808,14 +808,55 @@
     "Backend": "terraform",
     "DefaultDeployment": {
       "Variables": {
-        "Values": {
-          "release": "24.1",
-          "cluster_version": "1.27",
-          "eks_cluster_name": "*unity-eks",
-          "kubeconfig_filepath": "",
-          "uads_development_efs_fsmt_id": "",
-          "default_group_node_group_name": "UnityNodeGroup",
-          "default_group_node_group_launch_template_name": ""
+        "AdvancedValues": {
+          "airflow_webserver_username": "admin",
+          "airflow_webserver_password": "",
+          "airflow_docker_images": {
+            "airflow": {
+              "name": "ghcr.io/unity-sds/unity-sps/sps-airflow",
+              "tag": "2.2.0"
+            }
+          },
+          "dag_catalog_repo": {
+            "dags_directory_path": "airflow/dags",
+            "ref": "develop",
+            "url": "https://github.com/unity-sds/unity-sps.git"
+          },
+          "helm_charts": {
+            "airflow": {
+              "chart": "airflow",
+              "repository": "https://airflow.apache.org",
+              "version": "1.13.1"
+            },
+            "keda": {
+              "chart": "keda",
+              "repository": "https://kedacore.github.io/charts",
+              "version": "v2.14.2"
+            }
+          },
+          "karpenter_node_classes": {
+            "airflow-kubernetes-pod-operator-high-workload": {
+              "volume_size": "300Gi"
+            },
+            "default": {
+              "volume_size": "30Gi"
+            }
+          },
+          "kubeconfig_filepath": null,
+          "ogc_processes_docker_images": {
+            "git_sync": {
+              "name": "registry.k8s.io/git-sync/git-sync",
+              "tag": "v4.2.4"
+            },
+            "ogc_processes_api": {
+              "name": "ghcr.io/unity-sds/unity-sps-ogc-processes-api/unity-sps-ogc-processes-api",
+              "tag": "2.0.0"
+            },
+            "redis": {
+              "name": "redis",
+              "tag": "7.4.0"
+            }
+          }
         }
       }
     }
