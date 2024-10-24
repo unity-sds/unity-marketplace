@@ -65,6 +65,65 @@
     "DefaultDeployment": {}
   },
   {
+    "Name": "mmgis2",
+    "Version": "2.11.1",
+    "Channel": "beta",
+    "Owner": "Tariq Soliman",
+    "Description": "Multi-Mission Geographical Information System - Web-based Mapping and Spatial Data Infrastructure for Planetary Science Operations",
+    "Repository": "https://github.com/unity-sds/unity-cs-infra",
+    "Tags": [
+      "tile",
+      "javascript",
+      "planet",
+      "earth",
+      "mars",
+      "space",
+      "graphics",
+      "globe3d",
+      "tile3d",
+      "tiles",
+      "geojson",
+      "orbit",
+      "orbital",
+      "vector",
+      "dem",
+      "dtm",
+      "elevation",
+      "gdal",
+      "gdal2tiles",
+      "3d",
+      "nasa",
+      "ammos",
+      "map",
+      "mapping",
+      "visualization",
+      "three",
+      "threejs",
+      "webgl",
+      "gis",
+      "geographical information system",
+      "geospatial",
+      "rendering",
+      "geometry",
+      "terrain",
+      "mmgis",
+      "leaflet",
+      "multi-mission"
+    ],
+    "Category": "geospatial",
+    "IamRoles": {},
+    "WorkDirectory": "MMGIS-IAC/terraform2",
+    "ManagedDependencies": {},
+    "Backend": "terraform",
+    "DefaultDeployment": {
+      "Variables": {
+        "Values": {
+          "ignore": ""
+        }
+      }
+    }
+  },
+  {
     "Name": "unity-reference-application",
     "Version": "0.1-beta",
     "Channel": "beta",
