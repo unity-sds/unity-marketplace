@@ -128,7 +128,7 @@
   {
     "DisplayName": "MMGIS2",
     "Name": "mmgis2",
-    "Version": "2.11.1",
+    "Version": "2.11.2",
     "Channel": "beta",
     "Owner": "Tariq Soliman",
     "Repository": "https://github.com/unity-sds/unity-cs-infra",
