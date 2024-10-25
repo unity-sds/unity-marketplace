@@ -40,7 +40,7 @@
 		"Variables": {
 			"AdvancedValues": {
 				"airflow_webserver_username": "admin",
-				"airflow_webserver_password": "",
+				"airflow_webserver_password": "spsadmin",
 				"airflow_docker_images": {
 				  "airflow": {
 					"name": "ghcr.io/unity-sds/unity-sps/sps-airflow",
