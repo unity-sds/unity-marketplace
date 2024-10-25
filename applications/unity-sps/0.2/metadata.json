@@ -35,6 +35,11 @@
 	"Backend": "terraform",
 	"DefaultDeployment": {
 		"Variables": {
+			"Values" : {
+				"airflow_webserver_username": "admin",
+				"airflow_webserver_password": "",
+				"kubeconfig_filepath": ""
+			},
 			"AdvancedValues": {
 				"airflow_webserver_username": "admin",
 				"airflow_webserver_password": "",
