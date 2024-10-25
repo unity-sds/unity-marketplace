@@ -802,8 +802,7 @@
       },
       "unity-sps-karpenter": {
         "MinimumVersion": "0.1"
-      },
-      "efs": {}
+      }
     },
     "Backend": "terraform",
     "DefaultDeployment": {
