@@ -886,7 +886,7 @@
         }
       ]
     },
-    "Package": "https://github.com/unity-sds/unity-sps@3b89120a5f68d6e823bb9d79ed851dd66a7e2bab",
+    "Package": "https://github.com/unity-sds/unity-sps@fb28854abe53adc7feeb69838c5c8da843c56ccb",
     "WorkDirectory": "terraform-unity",
     "ManagedDependencies": {
       "unity-sps-eks": {
@@ -933,7 +933,7 @@
               "volume_size": "30Gi"
             }
           },
-          "kubeconfig_filepath": null,
+          "kubeconfig_filepath": "",
           "ogc_processes_docker_images": {
             "git_sync": {
               "name": "registry.k8s.io/git-sync/git-sync",
