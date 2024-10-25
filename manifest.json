@@ -65,12 +65,13 @@
     "DefaultDeployment": {}
   },
   {
+    "DisplayName": "MMGIS2",
     "Name": "mmgis2",
     "Version": "2.11.1",
     "Channel": "beta",
     "Owner": "Tariq Soliman",
-    "Description": "Multi-Mission Geographical Information System - Web-based Mapping and Spatial Data Infrastructure for Planetary Science Operations",
     "Repository": "https://github.com/unity-sds/unity-cs-infra",
+    "Description": "Multi-Mission Geographical Information System - Web-based Mapping and Spatial Data Infrastructure for Planetary Science Operations",
     "Tags": [
       "tile",
       "javascript",
@@ -112,9 +113,10 @@
     ],
     "Category": "geospatial",
     "IamRoles": {},
-    "WorkDirectory": "MMGIS-IAC/terraform2",
+    "Package": "https://github.com/unity-sds/unity-cs-infra",
     "ManagedDependencies": {},
     "Backend": "terraform",
+    "WorkDirectory": "MMGIS-IAC/terraform2",
     "DefaultDeployment": {
       "Variables": {
         "Values": {
