@@ -794,7 +794,7 @@
         }
       ]
     },
-    "Package": "https://github.com/unity-sds/unity-sps@5c138d89a93b0d94387f54e64a6b96b7bf3ddf73",
+    "Package": "https://github.com/unity-sds/unity-sps@3b89120a5f68d6e823bb9d79ed851dd66a7e2bab",
     "WorkDirectory": "terraform-unity",
     "ManagedDependencies": {
       "unity-sps-eks": {
@@ -887,7 +887,7 @@
         }
       ]
     },
-    "Package": "https://github.com/unity-sds/unity-sps@5c138d89a93b0d94387f54e64a6b96b7bf3ddf73",
+    "Package": "https://github.com/unity-sds/unity-sps@3b89120a5f68d6e823bb9d79ed851dd66a7e2bab",
     "WorkDirectory": "terraform-unity/modules/terraform-unity-sps-eks",
     "Backend": "terraform",
     "ManagedDependencies": {},
@@ -937,7 +937,7 @@
         }
       ]
     },
-    "Package": "https://github.com/unity-sds/unity-sps@5c138d89a93b0d94387f54e64a6b96b7bf3ddf73",
+    "Package": "https://github.com/unity-sds/unity-sps@3b89120a5f68d6e823bb9d79ed851dd66a7e2bab",
     "WorkDirectory": "terraform-unity/modules/terraform-unity-sps-karpenter",
     "Backend": "terraform",
     "ManagedDependencies": {
