@@ -1,20 +1,20 @@
 {
-    "DisplayName": "MMGIS2",
-    "Name": "mmgis2",
-    "Version": "0.0.0",
+    "DisplayName": "Unity-DS-Application",
+    "Name": "unity-ds2",
+    "Version": "8.1.1",
     "Channel": "beta",
     "Owner": "DS Team",
-    "Repository": "https://github.com/unity-sds/unity-cs-infra",
+    "Repository": "https://github.com/unity-sds/unity-data-services",
     "Description": "A package to create S3 buckets in arbitrary Unity Venue",
     "Tags": [
       "ds"
     ],
     "Category": "ds",
     "IamRoles": {},
-    "Package": "https://github.com/unity-sds/unity-cs-infra",
+    "Package": "https://github.com/unity-sds/unity-data-services@fd87b63d97b3e689cec98bca8444678de95f77a7",
     "ManagedDependencies": {},
     "Backend": "terraform",
-    "WorkDirectory": "MMGIS-IAC/terraform2", 
+    "WorkDirectory": "tf-module/marketplace",
     "DefaultDeployment": {
      "Variables": {
          "Values": {
@@ -27,4 +27,4 @@
      }
    }
   }
-  
+ 
