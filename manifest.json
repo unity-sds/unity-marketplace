@@ -984,7 +984,7 @@
         }
       ]
     },
-    "Package": "https://github.com/unity-sds/unity-sps@3b89120a5f68d6e823bb9d79ed851dd66a7e2bab",
+    "Package": "https://github.com/unity-sds/unity-sps@e34aca88467ea889ec62091bf558685163968aa2",
     "WorkDirectory": "terraform-unity/modules/terraform-unity-sps-eks",
     "Backend": "terraform",
     "ManagedDependencies": {},
