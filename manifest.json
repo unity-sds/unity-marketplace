@@ -886,7 +886,7 @@
         }
       ]
     },
-    "Package": "https://github.com/unity-sds/unity-sps@fb28854abe53adc7feeb69838c5c8da843c56ccb",
+    "Package": "https://github.com/unity-sds/unity-sps@e34aca88467ea889ec62091bf558685163968aa2",
     "WorkDirectory": "terraform-unity",
     "ManagedDependencies": {
       "unity-sps-eks": {
@@ -902,7 +902,7 @@
         "Values": {
           "airflow_webserver_username": "admin",
           "airflow_webserver_password": "",
-          "kubeconfig_filepath": ""
+          "kubeconfig_filepath": "/tmp/kubeconfig.yaml"
         },
         "AdvancedValues": {
           "airflow_webserver_username": "admin",
