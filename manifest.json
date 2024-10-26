@@ -992,14 +992,28 @@
       "Variables": {
         "AdvancedValues": {
           "nodegroups": {
-            "UnityNodeGroup": {
-              "min_size": 1,
-              "max_size": 10,
+            "defaultGroup": {
+              "block_device_mappings": {
+                "xvda": {
+                  "device_name": "/dev/xvda",
+                  "ebs": {
+                    "delete_on_termination": true,
+                    "encrypted": true,
+                    "volume_size": 100,
+                    "volume_type": "gp2"
+                  }
+                }
+              },
               "desired_size": 1,
               "instance_types": [
-                "t3.large"
+                "t3.xlarge"
               ],
-              "capacity_type": "SPOT"
+              "max_size": 1,
+              "metadata_options": {
+                "http_endpoint": "enabled",
+                "http_put_response_hop_limit": 3
+              },
+              "min_size": 1
             }
           }
         }
@@ -1034,7 +1048,7 @@
         }
       ]
     },
-    "Package": "https://github.com/unity-sds/unity-sps@3b89120a5f68d6e823bb9d79ed851dd66a7e2bab",
+    "Package": "https://github.com/unity-sds/unity-sps@e34aca88467ea889ec62091bf558685163968aa2",
     "WorkDirectory": "terraform-unity/modules/terraform-unity-sps-karpenter",
     "Backend": "terraform",
     "ManagedDependencies": {
