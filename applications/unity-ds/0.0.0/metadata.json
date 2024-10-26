@@ -50,7 +50,7 @@
     "Package": "https://github.com/unity-sds/unity-cs-infra",
     "ManagedDependencies": {},
     "Backend": "terraform",
-    "WorkDirectory": "MMGIS-IAC/terraform2", 
+    "WorkDirectory": "MMGIS-IAC/terraform", 
     "DefaultDeployment": {
         "Variables": {
             "Values": {
