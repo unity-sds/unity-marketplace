@@ -144,7 +144,13 @@
     "WorkDirectory": "MMGIS-IAC/terraform",
     "DefaultDeployment": {
       "Variables": {
-        "Values": {}
+        "Values": {
+          "deployment_name": "mmgis",
+          "mgmt_dns": "",
+          "secret": "secret",
+          "db_user": "postgres",
+          "db_pass": ""
+        }
       }
     }
   },
