@@ -844,8 +844,6 @@
           "kubeconfig_filepath": "/var/kubeconfig.yaml"
         },
         "AdvancedValues": {
-          "airflow_webserver_username": "admin",
-          "airflow_webserver_password": "spsadmin",
           "airflow_docker_images": {
             "airflow": {
               "name": "ghcr.io/unity-sds/unity-sps/sps-airflow",
@@ -877,7 +875,6 @@
               "volume_size": "30Gi"
             }
           },
-          "kubeconfig_filepath": "",
           "ogc_processes_docker_images": {
             "git_sync": {
               "name": "registry.k8s.io/git-sync/git-sync",
