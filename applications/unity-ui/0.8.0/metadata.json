@@ -1,0 +1,26 @@
+{
+   "DisplayName": "Unity-UI-Application",
+   "Name": "unity-ui",
+   "Version": "0.8.0",
+   "Channel": "beta",
+   "Owner": "UI/UX Team",
+   "Description": "A package to install and configure the Unity UI Application for your Unity Venue",
+   "Repository": "https://github.com/unity-sds/unity-ui-infra",
+   "Tags": [
+      "ui",
+      "navigation"
+   ],
+   "Category": "ui",
+   "IamRoles": {},
+   "Package": "https://github.com/unity-sds/unity-ui-infra@0d6ddf2df0d2d1706f6aa7683979ceb9a6e86266",
+   "ManagedDependencies": {},
+   "Backend": "terraform",
+   "WorkDirectory": "terraform-unity-ui",
+   "DefaultDeployment": {
+      "Variables": {
+         "Values": {
+            "app_count": "2"
+         }
+      }
+   }
+}
