@@ -1,0 +1,29 @@
+{
+    "DisplayName": "U-ADS Jupyterhub",
+    "Name": "unity-ads-jupyterhub",
+    "Version": "0.1",
+    "Channel": "beta",
+    "Owner": "U-ADS Team",
+    "Description": "A package to install and configure the Unity U-ADS Jupyterhub for your Unity Venue",
+    "Repository": "https://github.com/unity-sds/unity-ads-deployment",
+    "Tags": [
+       "ads",
+       "algorithm",
+       "jupyterhub"
+    ],
+    "Category": "ads",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-ads-deployment",
+    "ManagedDependencies": {},
+    "Backend": "terraform",
+    "WorkDirectory": "dev_env/jupyterhub",
+    "DefaultDeployment": {
+       "Variables": {
+          "Values": {
+             "cognito_oauth_base_url": "UPDATE ME",
+             "cognito_oauth_client_id": "UPDATE ME",
+             "cognito_oauth_client_secret": "UPDATE ME"
+          }
+       }
+    }
+ }
