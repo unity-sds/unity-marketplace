@@ -197,14 +197,14 @@
     "Channel": "beta",
     "Owner": "U-ADS Team",
     "Description": "A package to install and configure the Unity U-ADS Shared Storage on EFS for your Unity Venue",
-    "Repository": "https://github.com/unity-sds/unity-ads-deployment",
+    "Repository": "https://github.com/pymonger/unity-ads-deployment",
     "Tags": [
       "ads",
       "algorithm"
     ],
     "Category": "ads",
     "IamRoles": {},
-    "Package": "https://github.com/unity-sds/unity-ads-deployment",
+    "Package": "https://github.com/pymonger/unity-ads-deployment",
     "ManagedDependencies": {},
     "Backend": "terraform",
     "WorkDirectory": "dev_env/shared_storage",
