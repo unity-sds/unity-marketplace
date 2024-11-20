@@ -202,7 +202,7 @@
       "ads",
       "algorithm"
     ],
-    "Category": "ads",
+    "Category": "ads1",
     "IamRoles": {},
     "Package": "https://github.com/pymonger/unity-ads-deployment",
     "ManagedDependencies": {},
