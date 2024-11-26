@@ -20,6 +20,7 @@
     "DefaultDeployment": {
        "Variables": {
           "Values": {
+             "efs_identifier": "uads-gmanipon-dev-efs-fs",
              "cognito_oauth_base_url": "UPDATE ME",
              "cognito_oauth_client_id": "UPDATE ME",
              "cognito_oauth_client_secret": "UPDATE ME"
