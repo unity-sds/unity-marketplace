@@ -5,14 +5,14 @@
    "Channel": "beta",
    "Owner": "UI/UX Team",
    "Description": "A package to install and configure the Unity UI Application for your Unity Venue",
-   "Repository": "https://github.com/unity-sds/unity-ui-infra@",
+   "Repository": "https://github.com/unity-sds/unity-ui-infra",
    "Tags": [
       "ui",
       "navigation"
    ],
    "Category": "ui",
    "IamRoles": {},
-   "Package": "https://github.com/unity-sds/unity-ui-infra@52deb6772035e2416d43079ced2f3181b20104b4",
+   "Package": "https://github.com/unity-sds/unity-ui-infra@369e79bad65450f8f02f906c25d2a03881ed9c00",
    "ManagedDependencies": {},
    "Backend": "terraform",
    "WorkDirectory": "terraform-unity-ui",
