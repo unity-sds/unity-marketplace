@@ -24,7 +24,7 @@
 			]
 		}]
 	},
-	"Package": "https://github.com/unity-sds/unity-sps@5198a8cd45936e48855975372c678d0a0d3416a3",
+	"Package": "https://github.com/unity-sds/unity-sps@a6c36ebf938a9819446fe64b54db949101af9ad3",
 	"WorkDirectory": "terraform-unity/modules/terraform-unity-sps-karpenter",
 	"Backend": "terraform",
 	"ManagedDependencies": {
