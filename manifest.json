@@ -477,7 +477,7 @@
   {
     "DisplayName": "Unity-DS-Application",
     "Name": "unity-ds",
-    "Version": "8.1.1",
+    "Version": "8.1.2",
     "Channel": "beta",
     "Owner": "DS Team",
     "Repository": "https://github.com/unity-sds/unity-data-services",
