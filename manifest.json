@@ -1020,7 +1020,7 @@
         "Values": {
           "airflow_webserver_username": "admin",
           "airflow_webserver_password": "spsadmin",
-          "kubeconfig_filepath": "/var/kubeconfig.yaml"
+          "kubeconfig_filepath": "/tmp/kubeconfig.yaml"
         },
         "AdvancedValues": {
           "airflow_docker_images": {
