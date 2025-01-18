@@ -649,7 +649,7 @@
     ],
     "Category": "system",
     "IamRoles": {},
-    "Package": "https://github.com/unity-sds/unity-proxy@5da289e2988fe30caa7ee1c2c71bfb9ca6eee1fc",
+    "Package": "https://github.com/unity-sds/unity-proxy@1ddeab9ee530b86f5b77df2f1c9f7f628ed3a1c5",
     "Backend": "terraform",
     "ManagedDependencies": {},
     "DefaultDeployment": {},
