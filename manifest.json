@@ -223,7 +223,7 @@
     "Channel": "beta",
     "Owner": "U-ADS Team",
     "Description": "A package to install and configure the Unity U-ADS Jupyterhub for your Unity Venue",
-    "Repository": "https://github.com/pymonger/unity-ads-deployment",
+    "Repository": "https://github.com/unity-sds/unity-ads-deployment",
     "Tags": [
       "ads",
       "algorithm",
@@ -231,17 +231,17 @@
     ],
     "Category": "ads",
     "IamRoles": {},
-    "Package": "https://github.com/pymonger/unity-ads-deployment",
+    "Package": "https://github.com/unity-sds/unity-ads-deployment",
     "ManagedDependencies": {},
     "Backend": "terraform",
     "WorkDirectory": "dev_env/jupyterhub",
     "DefaultDeployment": {
       "Variables": {
         "Values": {
-          "efs_identifier": "uads-gmanipon-dev-efs-fs",
-          "cognito_oauth_base_url": "UPDATE ME",
-          "cognito_oauth_client_id": "UPDATE ME",
-          "cognito_oauth_client_secret": "UPDATE ME"
+          "efs_identifier": "uads-project-venue-efs-fs",
+          "cognito_oauth_base_url": "cognito_url",
+          "cognito_oauth_client_id": "id",
+          "cognito_oauth_client_secret": "secret"
         }
       }
     }
