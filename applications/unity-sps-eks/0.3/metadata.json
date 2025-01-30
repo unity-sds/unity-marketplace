@@ -1,0 +1,61 @@
+{
+	"DisplayName": "Unity SPS Kubernetes",
+	"Name": "unity-sps-eks",
+	"Version": "0.3",
+	"Channel": "beta",
+	"Owner": "Bradley Lunsford",
+	"Description": "The Unity SPS Kubernetes package",
+	"Repository": "https://github.com/unity-sds/unity-cs-infra",
+	"Tags": [
+		"eks",
+		"sps",
+		"kubernetes"
+	],
+	"Category": "system",
+	"IamRoles": {
+		"Statement": [{
+			"Effect": "Allow",
+			"Action": [
+				"iam:CreateInstanceProfile"
+			],
+			"Resource": [
+				"arn:aws:iam::<account_id>:instance-profile/eksctl*"
+			]
+		}]
+	},
+	"Package": "https://github.com/unity-sds/unity-sps@d929c0af33aa578fdb81a33f86dc8b59c5c3f1f1",
+	"WorkDirectory": "terraform-unity/modules/terraform-unity-sps-eks",
+	"Backend": "terraform",
+	"ManagedDependencies": {},
+	"DefaultDeployment": {
+		"Variables": {
+			"AdvancedValues": {
+				"nodegroups": {
+					"defaultGroup": {
+						"block_device_mappings": {
+							"xvda": {
+								"device_name": "/dev/xvda",
+								"ebs": {
+									"delete_on_termination": true,
+									"encrypted": true,
+									"volume_size": 100,
+									"volume_type": "gp2"
+								}
+							}
+						},
+						"desired_size": 1,
+						"instance_types": [
+							"t3.xlarge"
+						],
+						"max_size": 1,
+						"metadata_options": {
+							"http_endpoint": "enabled",
+							"http_put_response_hop_limit": 3
+						},
+						"min_size": 1
+					}
+				}
+			}
+		}
+	}
+}
