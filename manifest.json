@@ -377,7 +377,7 @@
   {
     "DisplayName": "Unity API Gateway",
     "Name": "unity-apigateway",
-    "Version": "0.4",
+    "Version": "24.4-stable",
     "Channel": "beta",
     "Owner": "U-CS Team",
     "Description": "A package to install and configure an API gateway for your Unity Venue",
@@ -409,7 +409,7 @@
   {
     "DisplayName": "Unity API Gateway",
     "Name": "unity-apigateway",
-    "Version": "0.4",
+    "Version": "latest",
     "Channel": "beta",
     "Owner": "U-CS Team",
     "Description": "A package to install and configure an API gateway for your Unity Venue",
@@ -481,7 +481,7 @@
   {
     "DisplayName": "Unity Health Status Monitoring",
     "Name": "unity-cs-monitoring-lambda",
-    "Version": "0.1",
+    "Version": "24.4-stable",
     "Channel": "beta",
     "Owner": "Brandon Hargitay",
     "Description": "Monitor the health of various Unity resources",
@@ -501,7 +501,7 @@
   {
     "DisplayName": "Unity Health Status Monitoring",
     "Name": "unity-cs-monitoring-lambda",
-    "Version": "0.1",
+    "Version": "latest",
     "Channel": "beta",
     "Owner": "Brandon Hargitay",
     "Description": "Monitor the health of various Unity resources",
@@ -942,7 +942,7 @@
   {
     "DisplayName": "Unity Proxy",
     "Name": "unity-proxy",
-    "Version": "0.14",
+    "Version": "24.4-stable",
     "Channel": "beta",
     "Owner": "Tom Barber",
     "Description": "The Unity HTTPD Proxy package",
@@ -962,7 +962,7 @@
   {
     "DisplayName": "Unity Proxy",
     "Name": "unity-proxy",
-    "Version": "0.14",
+    "Version": "latest",
     "Channel": "beta",
     "Owner": "Tom Barber",
     "Description": "The Unity HTTPD Proxy package",
@@ -1648,7 +1648,7 @@
   {
     "DisplayName": "Unity-UI-Application",
     "Name": "unity-ui",
-    "Version": "0.8.0",
+    "Version": "24.4-stable",
     "Channel": "beta",
     "Owner": "UI/UX Team",
     "Description": "A package to install and configure the Unity UI Application for your Unity Venue",
@@ -1674,7 +1674,7 @@
   {
     "DisplayName": "Unity UI Application",
     "Name": "unity-ui",
-    "Version": "0.0.1-beta",
+    "Version": "latest",
     "Channel": "beta",
     "Owner": "UI/UX Team",
     "Description": "A package to install and configure the Unity UI Application for your Unity Venue",
