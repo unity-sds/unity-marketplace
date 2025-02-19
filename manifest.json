@@ -401,6 +401,38 @@
         }
       ]
     },
+    "Package": "https://github.com/unity-sds/unity-cs-infra@0595fd83e05561a17734ba71c4f36bc0d89143fe",
+    "Backend": "terraform",
+    "WorkDirectory": "terraform-project-api-gateway_module",
+    "DefaultDeployment": {}
+  },
+  {
+    "DisplayName": "Unity API Gateway",
+    "Name": "unity-apigateway",
+    "Version": "0.4",
+    "Channel": "beta",
+    "Owner": "U-CS Team",
+    "Description": "A package to install and configure an API gateway for your Unity Venue",
+    "Repository": "https://github.com/unity-sds/unity-cs-infra/",
+    "Tags": [
+      "api",
+      "http",
+      "rest"
+    ],
+    "Category": "system",
+    "IamRoles": {
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": [
+            "iam:CreateInstanceProfile"
+          ],
+          "Resource": [
+            "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+          ]
+        }
+      ]
+    },
     "Package": "https://github.com/unity-sds/unity-cs-infra",
     "Backend": "terraform",
     "WorkDirectory": "terraform-project-api-gateway_module",
@@ -441,6 +473,26 @@
     "Category": "system",
     "IamRoles": {},
     "Package": "https://github.com/unity-sds/unity-cs-monitoring-lambda",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Health Status Monitoring",
+    "Name": "unity-cs-monitoring-lambda",
+    "Version": "0.1",
+    "Channel": "beta",
+    "Owner": "Brandon Hargitay",
+    "Description": "Monitor the health of various Unity resources",
+    "Repository": "https://github.com/unity-sds/unity-cs-monitoring-lambda",
+    "Tags": [
+      "monitor",
+      "health"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-cs-monitoring-lambda@0595fd83e05561a17734ba71c4f36bc0d89143fe",
     "Backend": "terraform",
     "ManagedDependencies": {},
     "DefaultDeployment": {},
@@ -882,6 +934,26 @@
     "Category": "system",
     "IamRoles": {},
     "Package": "https://github.com/unity-sds/unity-proxy@2c1cf77359dfea37532bc96b3085245f2a57e1d6",
+    "Backend": "terraform",
+    "ManagedDependencies": {},
+    "DefaultDeployment": {},
+    "WorkDirectory": "terraform-unity"
+  },
+  {
+    "DisplayName": "Unity Proxy",
+    "Name": "unity-proxy",
+    "Version": "0.14",
+    "Channel": "beta",
+    "Owner": "Tom Barber",
+    "Description": "The Unity HTTPD Proxy package",
+    "Repository": "https://github.com/unity-sds/unity-proxy",
+    "Tags": [
+      "proxy",
+      "httpd"
+    ],
+    "Category": "system",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-proxy@0595fd83e05561a17734ba71c4f36bc0d89143fe",
     "Backend": "terraform",
     "ManagedDependencies": {},
     "DefaultDeployment": {},
@@ -1562,6 +1634,32 @@
     "Category": "ui",
     "IamRoles": {},
     "Package": "https://github.com/unity-sds/unity-ui-infra@7f915a9b14c1e07c35a236ddced6495a458bdc23",
+    "ManagedDependencies": {},
+    "Backend": "terraform",
+    "WorkDirectory": "terraform-unity-ui",
+    "DefaultDeployment": {
+      "Variables": {
+        "Values": {
+          "app_count": "2"
+        }
+      }
+    }
+  },
+  {
+    "DisplayName": "Unity-UI-Application",
+    "Name": "unity-ui",
+    "Version": "0.8.0",
+    "Channel": "beta",
+    "Owner": "UI/UX Team",
+    "Description": "A package to install and configure the Unity UI Application for your Unity Venue",
+    "Repository": "https://github.com/unity-sds/unity-ui-infra",
+    "Tags": [
+      "ui",
+      "navigation"
+    ],
+    "Category": "ui",
+    "IamRoles": {},
+    "Package": "https://github.com/unity-sds/unity-ui-infra@0595fd83e05561a17734ba71c4f36bc0d89143fe",
     "ManagedDependencies": {},
     "Backend": "terraform",
     "WorkDirectory": "terraform-unity-ui",
