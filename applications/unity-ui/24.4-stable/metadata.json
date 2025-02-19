@@ -1,7 +1,7 @@
 {
    "DisplayName": "Unity-UI-Application",
    "Name": "unity-ui",
-   "Version": "0.8.0",
+   "Version": "24.4-stable",
    "Channel": "beta",
    "Owner": "UI/UX Team",
    "Description": "A package to install and configure the Unity UI Application for your Unity Venue",
