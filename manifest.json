@@ -492,7 +492,7 @@
     ],
     "Category": "system",
     "IamRoles": {},
-    "Package": "https://github.com/unity-sds/unity-cs-monitoring-lambda@747034f9d27cce759c89e91ca38cba559d998951",
+    "Package": "https://github.com/unity-sds/unity-cs-monitoring-lambda@68eae29d7e06f86f5ea458b7a6f2022d2baf827a",
     "Backend": "terraform",
     "ManagedDependencies": {},
     "DefaultDeployment": {},
