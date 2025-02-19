@@ -1659,7 +1659,7 @@
     ],
     "Category": "ui",
     "IamRoles": {},
-    "Package": "https://github.com/unity-sds/unity-ui-infra@0595fd83e05561a17734ba71c4f36bc0d89143fe",
+    "Package": "https://github.com/unity-sds/unity-ui-infra@cb3c2a51980b6fbfef58e5a1fd4c4a46f57ae20f",
     "ManagedDependencies": {},
     "Backend": "terraform",
     "WorkDirectory": "terraform-unity-ui",
