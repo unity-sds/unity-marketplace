@@ -1,0 +1,37 @@
+{
+  "DisplayName": "Unity On-Demand API",
+  "Name": "unity-on-demand-api",
+  "Version": "0.1-beta",
+  "Channel": "beta",
+  "Owner": "U-OD Team",
+  "Description": "A package to install and configure an On-Demand API for your Unity SPS",
+  "Repository": "https://github.com/unity-sds/unity-on-demand-api/",
+  "Tags": [
+    "api",
+    "http",
+    "rest",
+    "on-demand"
+  ],
+  "Category": "on-demand",
+  "IamRoles": {
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "iam:CreateInstanceProfile"
+        ],
+        "Resource": [
+          "arn:aws:iam::<account_id>:instance-profile/eksctl*"
+        ]
+      }
+    ]
+  },
+  "Package": "https://github.com/unity-sds/unity-on-demand-api/",
+  "Backend": "terraform",
+  "WorkDirectory": "terraform-unity",
+  "DefaultDeployment": {
+    "Variables": {
+      "deploy_script_path": "./deploy.sh"
+    }
+  }
+}
