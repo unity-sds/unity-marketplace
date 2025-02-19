@@ -1,27 +1,19 @@
 {
   "DisplayName": "Unity API Gateway",
   "Name": "unity-apigateway",
-  "Version": "0.4",
+  "Version": "latest",
   "Channel": "beta",
   "Owner": "U-CS Team",
   "Description": "A package to install and configure an API gateway for your Unity Venue",
   "Repository": "https://github.com/unity-sds/unity-cs-infra/",
-  "Tags": [
-    "api",
-    "http",
-    "rest"
-  ],
+  "Tags": ["api", "http", "rest"],
   "Category": "system",
   "IamRoles": {
     "Statement": [
       {
         "Effect": "Allow",
-        "Action": [
-          "iam:CreateInstanceProfile"
-        ],
-        "Resource": [
-          "arn:aws:iam::<account_id>:instance-profile/eksctl*"
-        ]
+        "Action": ["iam:CreateInstanceProfile"],
+        "Resource": ["arn:aws:iam::<account_id>:instance-profile/eksctl*"]
       }
     ]
   },

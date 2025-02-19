@@ -1,7 +1,7 @@
 {
   "DisplayName": "Unity API Gateway",
   "Name": "unity-apigateway",
-  "Version": "0.4",
+  "Version": "24.4-stable",
   "Channel": "beta",
   "Owner": "U-CS Team",
   "Description": "A package to install and configure an API gateway for your Unity Venue",
