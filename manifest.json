@@ -401,7 +401,7 @@
         }
       ]
     },
-    "Package": "https://github.com/unity-sds/unity-cs-infra@0595fd83e05561a17734ba71c4f36bc0d89143fe",
+    "Package": "https://github.com/unity-sds/unity-cs-infra@24bc1d66e2d39f94f131dce6cd2a639f52a30719",
     "Backend": "terraform",
     "WorkDirectory": "terraform-project-api-gateway_module",
     "DefaultDeployment": {}
