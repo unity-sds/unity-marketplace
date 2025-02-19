@@ -1,0 +1,17 @@
+{
+	"DisplayName": "Unity Health Status Monitoring",
+	"Name": "unity-cs-monitoring-lambda",
+	"Version": "0.1",
+	"Channel": "beta",
+	"Owner": "Brandon Hargitay",
+	"Description": "Monitor the health of various Unity resources",
+	"Repository": "https://github.com/unity-sds/unity-cs-monitoring-lambda",
+	"Tags": ["monitor", "health"],
+	"Category": "system",
+	"IamRoles": {},
+	"Package": "https://github.com/unity-sds/unity-cs-monitoring-lambda@0595fd83e05561a17734ba71c4f36bc0d89143fe",
+	"Backend": "terraform",
+	"ManagedDependencies": {},
+	"DefaultDeployment": {},
+	"WorkDirectory": "terraform-unity"
+}
