@@ -1,7 +1,7 @@
 {
 	"DisplayName": "Unity Health Status Monitoring",
 	"Name": "unity-cs-monitoring-lambda",
-	"Version": "0.1",
+	"Version": "24.4-stable",
 	"Channel": "beta",
 	"Owner": "Brandon Hargitay",
 	"Description": "Monitor the health of various Unity resources",
