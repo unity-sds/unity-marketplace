@@ -9,7 +9,7 @@
 	"Tags": ["monitor", "health"],
 	"Category": "system",
 	"IamRoles": {},
-	"Package": "https://github.com/unity-sds/unity-cs-monitoring-lambda@0595fd83e05561a17734ba71c4f36bc0d89143fe",
+	"Package": "https://github.com/unity-sds/unity-cs-monitoring-lambda@747034f9d27cce759c89e91ca38cba559d998951",
 	"Backend": "terraform",
 	"ManagedDependencies": {},
 	"DefaultDeployment": {},
