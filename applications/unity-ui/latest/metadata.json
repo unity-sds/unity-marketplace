@@ -1,33 +1,23 @@
 {
-  "DisplayName": "Unity UI Application",
-  "Name": "unity-ui",
+  "DisplayName": "Unity Portal Application",
+  "Name": "unity-portal",
   "Version": "latest",
   "Channel": "beta",
   "Owner": "UI/UX Team",
-  "Description": "A package to install and configure the Unity UI Application for your Unity Venue",
-  "Repository": "https://github.com/unity-sds/unity-ui-infra",
-  "Tags": ["ui", "navigation"],
+  "Description": "A package to install and configure the Unity Portal Application for your Unity Venue",
+  "Repository": "https://github.com/unity-sds/unity-uiux-infra",
+  "Tags": ["ui", "portal", "navigation"],
   "Category": "ui",
   "IamRoles": {},
-  "Package": "https://github.com/unity-sds/unity-ui-infra.git",
+  "Package": "https://github.com/unity-sds/unity-uiux-infra.git",
   "ManagedDependencies": {},
   "Backend": "terraform",
-  "WorkDirectory": "terraform-unity-ui",
+  "WorkDirectory": "terraform-unity-portal",
   "DefaultDeployment": {
-    "Variables": {
-      "some_terraform_variable": "some_value"
-    },
-    "EksSpec": {
-      "NodeGroups": [
-        {
-          "NodeGroup1": {
-            "MinNodes": 1,
-            "MaxNodes": 3,
-            "DesiredNodes": 2,
-            "InstanceType": "m4.large"
-          }
-        }
-      ]
-    }
-  }
+      "Variables": {
+         "Values": {
+            "app_count": "2"
+         }
+      }
+   }
 }
