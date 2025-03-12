@@ -1,0 +1,23 @@
+{
+  "DisplayName": "Unity Portal Application",
+  "Name": "unity-portal",
+  "Version": "0.8.0",
+  "Channel": "beta",
+  "Owner": "UI/UX Team",
+  "Description": "A package to install and configure the Unity Portal Application for your Unity Venue",
+  "Repository": "https://github.com/unity-sds/unity-uiux-infra",
+  "Tags": ["ui", "portal", "navigation"],
+  "Category": "ui",
+  "IamRoles": {},
+  "Package": "https://github.com/unity-sds/unity-uiux-infra@7f915a9b14c1e07c35a236ddced6495a458bdc23",
+  "ManagedDependencies": {},
+  "Backend": "terraform",
+  "WorkDirectory": "terraform-unity-ui",
+  "DefaultDeployment": {
+     "Variables": {
+        "Values": {
+           "app_count": "2"
+        }
+     }
+  }
+}
