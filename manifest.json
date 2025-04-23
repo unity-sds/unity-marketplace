@@ -731,7 +731,7 @@
     "Package": "https://github.com/unity-sds/unity-uiux-infra@1ee3a2464abd17e6fd0d2b1354830a77bde16672",
     "ManagedDependencies": {},
     "Backend": "terraform",
-    "WorkDirectory": "terraform-unity-ui",
+    "WorkDirectory": "terraform-unity-portal",
     "DefaultDeployment": {
       "Variables": {
         "Values": {
